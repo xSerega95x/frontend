@@ -1,0 +1,62 @@
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap&subset=cyrillic'); */
+@font-face {
+    font-family: 'Open Sans'; src: url('../fonts/OpenSans-Regular.ttf');
+    font-style: normal; font-weight: normal;
+}
+@font-face{
+    font-family: 'Open Sans'; src: url('../fonts/OpenSans-Bold.ttf');
+    font-style: normal; font-weight: bold;
+}
+
+*{ margin: 0; padding: 0; }
+
+.wrapper{ padding: 0 13.42%; }
+
+/* HEADER */
+header{ font-family: 'Open Sans', sans-serif; }
+.panel{
+    background-color: rgb(76, 177, 202); color: white;
+    display: flex; justify-content: space-between; align-items: center; 
+}
+.panel__i18n, .panel__i18n select{ font-size: 14pt; }
+.panel__menu li{ list-style: none;  display: inline; }
+.panel__menu a{ color: white; text-decoration: none; font-size: 13pt; }
+.header{ font-weight: bold; display: flex; justify-content: space-between; align-items: center; }
+.header > div{ display: flex; align-items: center; }
+.header__logo{ padding-right: 9.37%; }
+.header__menu li{ list-style: none; color: rgb(101, 101, 101); display: inline; padding-right: 2%; }
+.header__menu a{ color: rgb(101, 101, 101); text-decoration: none; font-size: 14pt; }
+.header__search{ position: relative;}
+.header__search input{ height: 28px; width: 174px; font-size: 13pt;}
+.header__search button{ position: absolute; top: 0px; left: 123px; height: 32px; width: 55px; }
+.header__shop{ margin-left: 13px; display: table; }
+.header__shop, .header__shop a{ color: rgb(101, 101, 101); font-size: 14pt; margin-right: 4px; }
+.header__shop > div{ display: table-cell; vertical-align: middle; }
+
+.slider{ }
+
+/* CONTENT */
+.body{ display: flex; justify-content: space-between; font-family: 'Open Sans', sans-serif; }
+
+.content{ flex-grow: 3; }
+.content__header{ font-size: 24pt; color: rgb(101, 101, 101); font-weight: normal; }
+.content section{ display: flex; justify-content: space-between; }
+.block{ border: 2px solid rgb(239, 241, 240); padding: 8px; }
+.block__photo{ position: relative; height: 228px; background-color: rgb(239, 241, 240); }
+.photo-sale{ position: absolute; top: 0; left: 0; }
+.photo-new{ position: absolute; top: 0; right: 0; }
+/* .photo-product{ position: absolute; top: 25%; left: 100%; } */
+.block__info{ display: table; }
+.block__info div, .block__info img{ display: table-cell; vertical-align: middle; }
+.block__header{ font-size: 14pt; color: rgb(70, 65, 72); font-weight: normal; }
+.block__price{ font-size: 18pt; color: rgb(125, 177, 34); }
+
+.sidebar{ flex-grow: 1; }
+
+/* FOOTER */
+.panel__order{ }
+.panel__phone{ }
+
+.footer{ }
+
+.panel__copyright{ }

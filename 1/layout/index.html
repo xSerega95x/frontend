@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Leo Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="panel wrapper">
+                <div class="panel__i18n">
+                    <label for="Language">Language:</label>
+                    <select name="Language" id="Language">
+                        <option value="0">English</option>
+                        <option value="1">Russian</option>
+                    </select>
+                
+                    <label for="Currency">Currency:</label>
+                    <select name="Currency" id="Currency">
+                        <option value="0">USD</option>
+                        <option value="1">RUB</option>
+                    </select>
+                </div> <!-- .panel__i18n -->
+
+                <ul class="panel__menu">
+                    <li><a href="#">Account</a> | </li>
+                    <li><a href="#">Wishlist</a> | </li>
+                    <li><a href="#">Checkout</a> | </li>
+                    <li><a href="#">Log In</a> | </li>
+                    <li><a href="#">Sign Up</a></li>
+                </ul>
+        </div>
+            
+        <div class="header wrapper">
+            <div>
+                <div class="header__logo">
+                    <a href="/">
+                        <img src="images/ui/logo.png" alt="logo">
+                    </a>
+                </div>
+                <ul class="header__menu">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">WOMEN</a></li>
+                    <li><a href="#">MAN</a></li>
+                    <li><a href="#">OTHER</a></li>
+                    <li><a href="#">PURCHASE</a></li>
+                </ul>
+            </div> 
+            <div>
+                <form action="#" class="header__search" >
+                    <input type="text" placeholder="search..."><!--
+                    --><button type="submit">?</button>
+                </form>
+                <div class="header__shop">
+                    <a href="#"><img src="images/ui/discont.png" alt="discont"></a>
+                    <a href="#"><img src="images/ui/backet.png" alt="backet"></a>
+                    <div>CART(<span>0</span>)</div>
+                </div>
+            </div>
+        </div>
+            
+    </header>
+
+    <section class="slider">
+        <div><img src="images/slick/slide_1.jpg" alt="slide1"></div>
+    </section>
+
+    <div class="body wrapper">
+        <div class="content">
+            <h2 class="content__header">FEATURED PRODUCTS</h2>
+            <section>
+                <div class="block">
+                    <div class="block__photo">
+                        <!-- sale -->
+                        <img class="photo-sale" src="images/content/sale.png" alt="photo-sale">
+                        <!-- new -->
+                        <!-- <img class="photo-new" src="images/content/new.png" alt="photo-new"> -->
+                        <!-- product -->
+                        <img class="photo-product" src="images/content/s1_b1.png" alt="s1_b1">
+                    </div>
+                    <div class="block__info">
+                        <div>
+                            <h4 class="block__header">Lorem Ipsum is simply.</h4>
+                            <span class="block__price">$388</span>
+                        </div>
+                        <a href="#"><img src="images/content/backet.png" alt="backet"></a>
+                    </div>
+                </div>
+
+                <div>block2</div>
+                <div>block3</div>
+                ...
+            </section>
+            <h2 class="content__header">STAFF PICK</h2>
+            <section>
+                ...
+            </section>
+        </div>
+
+        <div class="sidebar">
+                sidebar
+        </div>
+    </div>
+
+    <footer>
+        panel.wrapper
+            panel__order
+            panel__phone
+
+            footer.wrapper
+                block
+                    block__header
+                    block__info
+
+            panel.wrapper
+            panel__copyright
+            panel__menu
+    </footer>
+</body>
+</html>
