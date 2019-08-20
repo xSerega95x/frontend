@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Leo Shop</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
 </head>
 <body>
     <header>
@@ -63,8 +65,10 @@
             
     </header>
 
-    <section class="slider">
-        <div><img src="images/slick/slide_1.jpg" alt="slide1"></div>
+    <section class="main-slider">
+        <div><img src="images/slick/main-slide_1.jpg" alt="main-slide1"></div>
+        <div><img src="images/slick/main-slide_1.jpg" alt="main-slide2"></div>
+        <div><img src="images/slick/main-slide_1.jpg" alt="main-slide3"></div>
     </section>
 
     <div class="body wrapper">
@@ -73,12 +77,12 @@
             <section>
                 <div class="cblock">
                     <div class="cblock__photo">
-                        <!-- sale -->
-                        <img class="photo-sale" src="images/content/sale.png" alt="photo-sale">
-                        <!-- new -->
-                        <!-- <img class="photo-new" src="images/content/new.png" alt="photo-new"> -->
                         <!-- product -->
-                        <img class="photo-product" src="images/content/s1_b1.png" alt="s1_b1">
+                        <img class="photo-product" src="images/content/s1_b1.jpg" alt="s1_b1">
+                        <!-- sale -->
+                        <!-- <img class="photo-sale" src="images/content/sale.png" alt="photo-sale"> -->
+                        <!-- new -->
+                        <img class="photo-new" src="images/content/new.png" alt="photo-new">
                     </div>
                     <div class="cblock__info">
                         <div>
@@ -89,18 +93,290 @@
                     </div>
                 </div>
 
-                <div>block2</div>
-                <div>block3</div>
-                ...
+                <div class="cblock">
+                    <div class="cblock__photo">
+                        <!-- product -->
+                        <img class="photo-product" src="images/content/s1_b2.jpg" alt="s1_b2">
+                        <!-- sale -->
+                        <!-- <img class="photo-sale" src="images/content/sale.png" alt="photo-sale"> -->
+                        <!-- new -->
+                        <!-- <img class="photo-new" src="images/content/new.png" alt="photo-new"> -->
+                    </div>
+                    <div class="cblock__info">
+                        <div>
+                            <h4 class="cblock__header">Nullam vestibulum.</h4>
+                            <span class="cblock__price">$90.00</span>
+                        </div>
+                        <a href="#"><img src="images/content/backet.png" alt="backet"></a>
+                    </div>
+                </div>
+
+                <div class="cblock">
+                    <div class="cblock__photo">
+                        <!-- product -->
+                        <img class="photo-product" src="images/content/s1_b3.jpg" alt="s1_b3">
+                        <!-- sale -->
+                        <img class="photo-sale" src="images/content/sale.png" alt="photo-sale">
+                        <!-- new -->
+                        <!-- <img class="photo-new" src="images/content/new.png" alt="photo-new"> -->
+                    </div>
+                    <div class="cblock__info">
+                        <div>
+                            <h4 class="cblock__header">Donec et lorem suscipit.</h4>
+                            <s>$460</s>
+                            <span class="cblock__price">$300.00</span>
+                        </div>
+                        <a href="#"><img src="images/content/backet.png" alt="backet"></a>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <!-- row2 -->
+                <div class="cblock">
+                    <div class="cblock__photo">
+                        <!-- product -->
+                        <img class="photo-product" src="images/content/s1_b4.jpg" alt="s1_b4">
+                        <!-- sale -->
+                        <!-- <img class="photo-sale" src="images/content/sale.png" alt="photo-sale"> -->
+                        <!-- new -->
+                        <!-- <img class="photo-new" src="images/content/new.png" alt="photo-new"> -->
+                    </div>
+                    <div class="cblock__info">
+                        <div>
+                            <h4 class="cblock__header">Curabitur pretium dui.</h4>
+                            <span class="cblock__price">$180.00</span>
+                        </div>
+                        <a href="#"><img src="images/content/backet.png" alt="backet"></a>
+                    </div>
+                </div>
+
+                <div class="cblock">
+                    <div class="cblock__photo">
+                        <!-- product -->
+                        <img class="photo-product" src="images/content/s1_b5.jpg" alt="s1_b5">
+                        <!-- sale -->
+                        <!-- <img class="photo-sale" src="images/content/sale.png" alt="photo-sale"> -->
+                        <!-- new -->
+                        <img class="photo-new" src="images/content/new.png" alt="photo-new">
+                    </div>
+                    <div class="cblock__info">
+                        <div>
+                            <h4 class="cblock__header">Lorem Ipsum is simply</h4>
+                            <span class="cblock__price">$278.00</span>
+                        </div>
+                        <a href="#"><img src="images/content/backet.png" alt="backet"></a>
+                    </div>
+                </div>
+
+                <div class="cblock">
+                    <div class="cblock__photo">
+                        <!-- product -->
+                        <img class="photo-product" src="images/content/s1_b6.jpg" alt="s1_b6">
+                        <!-- sale -->
+                        <!-- <img class="photo-sale" src="images/content/sale.png" alt="photo-sale"> -->
+                        <!-- new -->
+                        <!-- <img class="photo-new" src="images/content/new.png" alt="photo-new"> -->
+                    </div>
+                    <div class="cblock__info">
+                        <div>
+                            <h4 class="cblock__header">Sed tempus tellus.</h4>
+                            <span class="cblock__price">$378.00</span>
+                        </div>
+                        <a href="#"><img src="images/content/backet.png" alt="backet"></a>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <!-- row 3 -->
+                <div class="cblock">
+                    <div class="cblock__photo">
+                        <!-- product -->
+                        <img class="photo-product" src="images/content/s1_b7.jpg" alt="s1_b7">
+                        <!-- sale -->
+                        <!-- <img class="photo-sale" src="images/content/sale.png" alt="photo-sale"> -->
+                        <!-- new -->
+                        <img class="photo-new" src="images/content/new.png" alt="photo-new">
+                    </div>
+                    <div class="cblock__info">
+                        <div>
+                            <h4 class="cblock__header">Lorem Ipsum is simply.</h4>
+                            <span class="cblock__price">$500.00</span>
+                        </div>
+                        <a href="#"><img src="images/content/backet.png" alt="backet"></a>
+                    </div>
+                </div>
+
+                <div class="cblock">
+                    <div class="cblock__photo">
+                        <!-- product -->
+                        <img class="photo-product" src="images/content/s1_b8.jpg" alt="s1_b8">
+                        <!-- sale -->
+                        <img class="photo-sale" src="images/content/sale.png" alt="photo-sale">
+                        <!-- new -->
+                        <!-- <img class="photo-new" src="images/content/new.png" alt="photo-new"> -->
+                    </div>
+                    <div class="cblock__info">
+                        <div>
+                            <h4 class="cblock__header">Etiam egestas velit.</h4>
+                            <s>$460</s>
+                            <span class="cblock__price">$200.00</span>
+                        </div>
+                        <a href="#"><img src="images/content/backet.png" alt="backet"></a>
+                    </div>
+                </div>
+
+                <div class="cblock">
+                    <div class="cblock__photo">
+                        <!-- product -->
+                        <img class="photo-product" src="images/content/s1_b9.jpg" alt="s1_b9">
+                        <!-- sale -->
+                        <!-- <img class="photo-sale" src="images/content/sale.png" alt="photo-sale"> -->
+                        <!-- new -->
+                        <img class="photo-new" src="images/content/new.png" alt="photo-new">
+                    </div>
+                    <div class="cblock__info">
+                        <div>
+                            <h4 class="cblock__header">Mauris viverra magna.</h4>
+                            <span class="cblock__price">$370.00</span>
+                        </div>
+                        <a href="#"><img src="images/content/backet.png" alt="backet"></a>
+                    </div>
+                </div>
             </section>
             <h2 class="content__header">STAFF PICK</h2>
             <section>
-                ...
+                <div class="cblock">
+                    <div class="cblock__photo">
+                        <!-- product -->
+                        <img class="photo-product" src="images/content/s1_b9.jpg" alt="s1_b9">
+                        <!-- sale -->
+                        <!-- <img class="photo-sale" src="images/content/sale.png" alt="photo-sale"> -->
+                        <!-- new -->
+                        <img class="photo-new" src="images/content/new.png" alt="photo-new">
+                    </div>
+                    <div class="cblock__info">
+                        <div>
+                            <h4 class="cblock__header">Lorem Ipsum is simply.</h4>
+                            <span class="cblock__price">$378.00</span>
+                        </div>
+                        <a href="#"><img src="images/content/backet.png" alt="backet"></a>
+                    </div>
+                </div>
+
+                <div class="cblock">
+                    <div class="cblock__photo">
+                        <!-- product -->
+                        <img class="photo-product" src="images/content/s1_b5.jpg" alt="s1_b5">
+                        <!-- sale -->
+                        <!-- <img class="photo-sale" src="images/content/sale.png" alt="photo-sale"> -->
+                        <!-- new -->
+                        <!-- <img class="photo-new" src="images/content/new.png" alt="photo-new"> -->
+                    </div>
+                    <div class="cblock__info">
+                        <div>
+                            <h4 class="cblock__header">Mauris viverra magna.</h4>
+                            <span class="cblock__price">$278.00</span>
+                        </div>
+                        <a href="#"><img src="images/content/backet.png" alt="backet"></a>
+                    </div>
+                </div>
+
+                <div class="cblock">
+                    <div class="cblock__photo">
+                        <!-- product -->
+                        <img class="photo-product" src="images/content/s1_b3.jpg" alt="s1_b3">
+                        <!-- sale -->
+                        <!-- <img class="photo-sale" src="images/content/sale.png" alt="photo-sale"> -->
+                        <!-- new -->
+                        <img class="photo-new" src="images/content/new.png" alt="photo-new">
+                    </div>
+                    <div class="cblock__info">
+                        <div>
+                            <h4 class="cblock__header">Curabitur pretium dui.</h4>
+                            <span class="cblock__price">$188.00</span>
+                        </div>
+                        <a href="#"><img src="images/content/backet.png" alt="backet"></a>
+                    </div>
+                </div>
+            </section>
+            <h2 class="content__header">NEW PRODUCTS</h2>
+            <section>
+                <div class="cblock">
+                    <div class="cblock__photo">
+                        <!-- product -->
+                        <img class="photo-product" src="images/content/s1_b6.jpg" alt="s1_b6">
+                        <!-- sale -->
+                        <!-- <img class="photo-sale" src="images/content/sale.png" alt="photo-sale"> -->
+                        <!-- new -->
+                        <img class="photo-new" src="images/content/new.png" alt="photo-new">
+                    </div>
+                    <div class="cblock__info">
+                        <div>
+                            <h4 class="cblock__header">Sed tempus tellus.</h4>
+                            <span class="cblock__price">$90.00</span>
+                        </div>
+                        <a href="#"><img src="images/content/backet.png" alt="backet"></a>
+                    </div>
+                </div>
+
+                <div class="cblock">
+                    <div class="cblock__photo">
+                        <!-- product -->
+                        <img class="photo-product" src="images/content/s1_b3.jpg" alt="s1_b3">
+                        <!-- sale -->
+                        <!-- <img class="photo-sale" src="images/content/sale.png" alt="photo-sale"> -->
+                        <!-- new -->
+                        <img class="photo-new" src="images/content/new.png" alt="photo-new">
+                    </div>
+                    <div class="cblock__info">
+                        <div>
+                            <h4 class="cblock__header">Nulla accumsan lect.</h4>
+                            <span class="cblock__price">$60.00</span>
+                        </div>
+                        <a href="#"><img src="images/content/backet.png" alt="backet"></a>
+                    </div>
+                </div>
+
+                <div class="cblock">
+                    <div class="cblock__photo">
+                        <!-- product -->
+                        <img class="photo-product" src="images/content/s1_b4.jpg" alt="s1_b4">
+                        <!-- sale -->
+                        <!-- <img class="photo-sale" src="images/content/sale.png" alt="photo-sale"> -->
+                        <!-- new -->
+                        <!-- <img class="photo-new" src="images/content/new.png" alt="photo-new"> -->
+                    </div>
+                    <div class="cblock__info">
+                        <div>
+                            <h4 class="cblock__header">Lorem Ipsum is simply.</h4>
+                            <span class="cblock__price">$378.00</span>
+                        </div>
+                        <a href="#"><img src="images/content/backet.png" alt="backet"></a>
+                    </div>
+                </div>
             </section>
         </div>
 
         <div class="sidebar">
-                sidebar
+            <div>
+                <h2 class="content__header">FEATURED<br> GLASS</h2>
+                <div>
+                    <div class="sidebar-slider">
+                        <div><img src="images/slick/sidebar-slide_1.jpg" alt="sidebar-slide1"></div>
+                        <div><img src="images/slick/sidebar-slide_1.jpg" alt="sidebar-slide2"></div>
+                        <div><img src="images/slick/sidebar-slide_1.jpg" alt="sidebar-slide3"></div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h2 class="content__header">NEWSLETTERS<br> SIGNUP</h2>
+                <p>Lorem ipsum dolor sit amen,<br> dolor imun ra adlip ulissys</p>
+                <form action="">
+                    <input type="text"><br>
+                    <button>Subscribe</button>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -125,20 +401,22 @@
                 <hr>
                 <div>
                     <div class="fblock__info">
-                        <img src="images/social/person-01.jpg" alt="social1">
-                        <img src="images/social/person-02.jpg" alt="social2">
-                        <img src="images/social/person-03.jpg" alt="social3">
-                        <img src="images/social/person-04.jpg" alt="social4">
+                        <a href="#"><img src="images/social/person-01.jpg" alt="social1"></a>
+                        <a href="#"><img src="images/social/person-02.jpg" alt="social2"></a>
+                        <a href="#"><img src="images/social/person-03.jpg" alt="social3"></a>
+                        <a href="#"><img src="images/social/person-04.jpg" alt="social4"></a>
                     </div>
                     <div class="fblock__info">
-                        <img src="images/social/person-05.jpg" alt="social5">
-                        <img src="images/social/person-06.jpg" alt="social6">
-                        <img src="images/social/person-07.jpg" alt="social7">
-                        <img src="images/social/person-08.jpg" alt="social8">
+                        <a href="#"><img src="images/social/person-05.jpg" alt="social5"></a>
+                        <a href="#"><img src="images/social/person-06.jpg" alt="social6"></a>
+                        <a href="#"><img src="images/social/person-07.jpg" alt="social7"></a>
+                        <a href="#"><img src="images/social/person-08.jpg" alt="social8"></a>
                     </div>
                 </div>
                 <hr>
-                <a href="#">facebook Social plugin</a>
+                <div class="fblock__info">
+                    <a href="#">facebook Social plugin</a>
+                </div>
             </div>
 
             <div class="fblock">
@@ -161,32 +439,52 @@
 
             <div class="fblock">
                 <h4 class="fblock__header">INFORMATION</h4>
-                <ul class="fblock__info fblock__info_iblock">
-                    <li>Sed ultrices purus non.</li>
-                    <li>sodales sodales.</li>
-                    <li>Curabitur pretium dui vitae.</li>
-                    <li>Donec gravida mi in nisl </li>
-                    <li>faucibus leo condimentum.</li>
-                    <li>Donec et lorem suscipit.</li>
-                </ul>
+                <div class="fblock__info fblock__info_iblock">
+                    <ul>
+                        <li>Sed ultrices purus non.</li>
+                        <li>sodales sodales.</li>
+                        <li>Curabitur pretium dui vitae.</li>
+                        <li>Donec gravida mi in nisl </li>
+                        <li>faucibus leo condimentum.</li>
+                        <li>Donec et lorem suscipit.</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="fblock">
                 <h4 class="fblock__header">CONTACTS</h4>
-                <ul class="fblock__info fblock__info_iblock">
-                    <li>Leo Store</li>
-                    <li>Leopards media</li>
-                    <li>KVM Rpad, 4590GH</li>
-                    <li>+1 489-8888-0099</li>
-                    <li>mail@email.com</li>
-                </ul>
-                <div class="fblock__info">avatars</div>
+                <div class="fblock__info fblock__info_iblock">
+                    <ul class="fblock__info_contacts">
+                        <li>Leo Store</li>
+                        <li>Leopards media</li>
+                        <li>KVM Rpad, 4590GH</li>
+                        <li>+1 489-8888-0099</li>
+                        <li>mail@email.com</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="fblock__info">
+                    <a href="#"><img src="images/ui/g.png" alt="g"></a>
+                    <a href="#"><img src="images/ui/in.png" alt="in"></a>
+                    <a href="#"><img src="images/ui/rss.png" alt="rss"></a>
+                    <a href="#"><img src="images/ui/f.png" alt="f"></a>
+                </div>
             </div>
         </section>
-
-            panel.wrapper
-            panel__copyright
-            panel__menu
+        <section class="panel wrapper panel_footer">
+            <div class="panel__copyright">
+                © Copyright 2013 Css Author, All Rights Reserved.
+            </div>
+            <ul class="panel__menu panel__menu_footer">
+                <li><a href="#">About Us</a> | </li>
+                <li><a href="#">Delivery & Returns</a> | </li>
+                <li><a href="#">Terms & Conditions</a> | </li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </section>
     </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
