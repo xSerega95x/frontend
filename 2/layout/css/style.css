@@ -1,0 +1,23 @@
+*{ margin: 0; padding: 0; }
+.wrapper{ width: 1274px; margin: 0 auto; }
+
+/* HEADER */
+.contacts{ }
+.contacts__block{ }
+.contacts__icon{ }
+.contacts__social{ }
+header{ }
+.menu{ }
+
+/* CONTENT */
+#header{ }
+#welcome{ }
+#consultation{ }
+#team{ }
+#services{ }
+#clients{ }
+#about{ }
+#contact{ }
+
+/* FOOTER */
+footer{ }
