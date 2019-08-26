@@ -1,19 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=cyrillic');
+@font-face { 
+    font-family: 'Roboto Regular'; 
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: normal; 
+}
+@font-face { 
+    font-family: 'Roboto Medium'; 
+    src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: normal; 
+}
+
 *{ margin: 0; padding: 0; }
 .wrapper{ width: 1274px; margin: 0 auto; }
 
 /* HEADER */
-.contacts{ }
-.contacts__block{ }
-.contacts__icon{ }
-.contacts__social{ }
-header{ }
-.menu{ }
+.contacts{ background-color: #0175b3; color: #ffffff; font-family: 'Roboto Regular', sans-serif; }
+.contacts__body{ display: flex; justify-content: space-between; align-items: center; height: 3.125em; /* 50:16=3.125em */}
+.contacts__block{ margin-right: 14px; display: flex; align-items: center; }
+.contacts__icon{ margin-right: 7px; }
+.contacts__icon_social{ margin-right: 24px; text-decoration: none; }
+.contacts__info{ padding-right: 14px; }
+.header{ background-color: #ffffff; }
+.header__body{ display: flex; justify-content: space-between; align-items: center; }
+.header__logo{ text-decoration: none; }
+.header__nav{ display: flex; justify-content: space-between; align-items: center; }
+.menu{ font-family: 'Roboto Medium', sans-serif; }
+.menu__link{ text-decoration: none; text-transform: uppercase; color: #505050; margin-right: 30px; }
+.active{ color: #0175b3;}
+.form{ position: relative; /*206:1274*100=16.16%*/ }
+.form__search{ font: normal 0.81em 'Roboto Regular'; /*13:16=0.81em*/ } 
+.form__submit{ position: absolute; top: 0; right: 0; width: 40px; }
 
 /* CONTENT */
-#header{ }
-#welcome{ }
-#consultation{ }
-#team{ }
+#header{ background: url('../images/content/header.jpg') no-repeat; position: relative; height: 57.37em; /*918px*/ }
+.cblock1{ position: absolute; bottom: 142px; }
+.cblock1__header{ font: normal 4.5em 'Roboto Medium'; /*72px*/ color: #0385cb;}
+.cblock1__content{ font: normal 1.5em 'Roboto Regular'; /*24px*/ color: #888888; margin: 33px 0 48px 0;}
+.cblock1__button{
+    font: normal 1.06em 'Roboto Regular'; /*17px*/ color: #ffffff; text-decoration: none;
+    text-transform: uppercase; background-color: #017ec1; padding: 15px 48px;
+}
+#welcome{ background-color: #ffffff; margin-top: 4.06em; /*65px*/}
+.cblock2{ margin: 0 auto; width: 83.2%; /*1060px*/}
+.cblock2__header{ font: normal 2.5em 'Roboto Medium'; /*40px*/ color: #0175b3; text-align: center; }
+.cblock2__lines{ width: 15.56%; /*165px*/ margin: 30px auto;  }
+.cblock2__line1{ height: 0.05em; /*2px*/ background-color: #c3c2c2; margin-bottom: 7px; }
+.cblock2__line2{ height: 0.05em; width: 63.63%; /*105px*/ margin: 0 auto; background-color: #b2b0b0; }
+.cblock2__content{ font: normal 1.18em 'Roboto Regular'; /*19px*/ color: #737171; text-align: center; }
+#consultation{ background: url('../images/content/cons.jpg') no-repeat; position: relative; height: 35.75em; /*572px*/}
+.cblock1_center{ left: 29.4%; bottom: 60px; text-align: center; }
+.cblock1__header__small{ font: normal 2.37em 'Roboto Regular'; /*38px*/ color: #ffffff; }
+.cblock1__header_write{ color: #ffffff; }
+.cblock1__line{
+    height: 0.43em; /*7px*/ width: 9.37em;/*150px*/ background: #bab3b3; margin: 29px 0 102px 0;
+    position: relative; left: 36%; top: 50%;
+}
+#team{ background-color: #ffffff; margin: 3.12em 0; /*50px*/ }
+#team-bg{ background-color: #d8d8da; }
+.cblock2__body{ display: flex; justify-content: space-between; align-items: center; }
+.cblock2__block{ background-color: #ffffff; margin: 3.56em 1.25em 4.56em 0;/*57px;20px;73px;0*/ }
+.cblock2__header_small{ font-size: 1.375em; /*22px*/ text-transform: uppercase; }
+.cblock2__descr{  }
 #services{ }
 #clients{ }
 #about{ }
