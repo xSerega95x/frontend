@@ -1,0 +1,61 @@
+@media screen and (max-width:1280px), only screen and (max-device-width:1280px){
+    .wrapper{ width: 1256px; }
+}
+
+@media screen and (max-width:1024px), only screen and (max-device-width:1024px){
+    .wrapper{ width: 1000px; }
+}
+
+@media screen and (max-width:854px), only screen and (max-device-width:854px){
+    .wrapper{ width: 820px; }
+    .cblock2__block_little{ height: 19.692em; /*294px+22px*/ }
+    .form_mail{ width: 95%; }
+}
+
+@media screen and (max-width:800px), only screen and (max-device-width:800px){
+    .wrapper{ width: 780px; }
+    .cblock1_center{ left: 20%; }
+    .cblock2__block_little{ height: 20.692em; }
+    .fblock{ padding: 0 1.56% 0 2.35%;/*20px;30px;*/ }
+}
+
+@media screen and (max-width:768px), only screen and (max-device-width:768px){
+    .wrapper{ width: 748px; }
+    .cblock1_center{ left: 20%; }
+    .cblock2__block_little{ height: 20.692em; }
+    .fblock{ padding: 0 1.56% 0 2.35%;/*20px;30px;*/ }
+}
+
+@media screen and (max-width:640px), only screen and (max-device-width:640px){
+    .wrapper{ width: 620px; }
+    .cols{ flex-wrap: wrap; }
+    .cblock1_center{ left: 10%; }
+    .cblock2__body{ flex-wrap: nowrap; }
+    .cblock2__block_little{ height: 25.692em; }
+    .cblock2__header_clients{ padding-top: 0.812em;/*32px*/ }
+    .cblock2__img_clients{ margin: 1.03em auto 1.34em auto; /*16px;0;21px;0*/}
+    #contact{ padding-top: 0.625em;/*10px*/}
+    .cblock3{ width: 100%; }
+    .cblock3__header{ margin-bottom: 0.13em; }
+    .cblock3__content{ margin-bottom: 0.7em; }
+    .form__text{ margin-bottom: 0.7em; }
+    footer{ padding: 1.18em 0 0.35em 0; height: auto; }
+    .fblock{ width: 45%; height: auto; }
+    .fblock_aboutus p.fblock__content{ margin-bottom: 0.1em;}
+    .contacts__block_footer{ width: 80%; }
+    .footer { align-items: flex-start; margin-bottom: 1.625em; }
+}
+
+@media screen and (max-width:360px), only screen and (max-device-width:360px){
+    .wrapper{ width: 320px; }
+    .cols{ flex-wrap: wrap; }
+    .contacts__body{ height: auto; }
+    .menu__link{ margin-right: 5px; }
+    .cblock2__block{ margin: 0; box-shadow: none; }
+    .cblock2__block_little{ height: 15.692em; }
+    .cblock2__header_clients{ padding-top: 0.1em; }
+    #cblock2__lines-clients, .cblock2__img_clients{ display: none; }
+    .cblock1__button_center{ margin-top: 1.3em; }
+    #contact { height: auto; }
+    .form__button_mail {  font-size: 0.9em; padding: 0.9em; }
+}
