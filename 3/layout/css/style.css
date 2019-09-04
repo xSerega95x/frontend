@@ -1,3 +1,4 @@
+/* Некоторые шрифты отсутствуют в fonts.google.com */
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap&subset=cyrillic');
 @font-face {
     font-family: 'Source Sans Pro'; src: url('../fonts/SourceSansPro-Light.ttf');
@@ -9,6 +10,10 @@
 }
 @font-face{
     font-family: 'Century Gothic'; src: url('../fonts/CenturyGothic.ttf');
+    font-style: normal; font-weight: normal;
+}
+@font-face{
+    font-family: 'Helvetica LT Ultra Compresssed'; src: url('../fonts/HelveticaLTU.ttf');
     font-style: normal; font-weight: normal;
 }
 
@@ -31,4 +36,26 @@
 .nav-link::before{ content: " > "; color: #faa61a; }
 
 /*      SECTION-MAIN      SECTION-MAIN      SECTION-MAIN      SECTION-MAIN      SECTION-MAIN */
-.section-main{ height: 54.8rem; }
+.section-main{ height: 54.8rem; position: relative; padding: 0 2rem; }
+
+.section-main__header{ font: normal 12.4rem 'Helvetica LT Ultra Compresssed', sans-serif;}
+.block1{ height: 36.8rem; }
+.block1__mheader{
+    font: italic 2.8rem 'Centure Gothic'; position: absolute; top: 5rem ; left: -1.3rem;
+    color: white; background-color: black;
+}
+.block1__header{
+    margin-top: 1.8rem; display: inline-block; background-color: white;
+    text-transform: uppercase; font: bold 1.4rem 'Source Sans Pro', sans-serif;
+}
+.block1__text{ font: normal 1.4rem 'Source Sans Pro', sans-serif; color: white; }
+.card{ border: 0; border-radius: 0; }
+.card-text{ font: normal 1.4rem 'Source Sans Pro', sans-serif; }
+.btn-primary{ background: black; border: 0; border-radius: 0; position: relative; margin-right: 1.5rem; }
+.btn-primary::after{
+    content: " >"; background-color: #faa61a; position: absolute; right: -1.5rem; top: 0;
+    padding: .375rem .4rem; font-size: 1rem;
+}
+
+/*      SECTION-PROGRESS      SECTION-PROGRESS      SECTION-PROGRESS      SECTION-PROGRESS */
+.section-progress{ }
