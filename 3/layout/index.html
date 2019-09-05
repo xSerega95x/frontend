@@ -6,66 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lipsum Media</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="container">
-    <div class="ml-auto mt-1 row justify-content-around bg-color panel">
-        <form class="form-inline ml-auto pr-0 form col-10">
-            <input class="form-control mr-sm-2 form__input" type="search">
-            <button class="btn form__button" type="submit">Subscribe</button>
-        </form>
-        <div class="col-2 px-0 social">
-            <span> | </span>
-            <a href="#"><img src="images/social/twitter.png" alt="twitter" class="mr-2"></a>
-            <span> | </span>
-            <a href="#"><img src="images/social/facebook.png" alt="facebook"></a>
+<body>
+    <div class="container">
+        <div class="ml-auto mt-1 row justify-content-around bg-color panel">
+            <form class="form-inline pr-0 form col-10">
+                <input class="form-control mr-sm-2 form__input" type="search">
+                <button class="btn form__button" type="submit">Subscribe</button>
+            </form>
+            <div class="col-2 px-0 social">
+                <span> | </span>
+                <a href="#"><img src="images/social/twitter.png" alt="twitter" class="mr-2"></a>
+                <span> | </span>
+                <a href="#"><img src="images/social/facebook.png" alt="facebook"></a>
+            </div>
         </div>
     </div>
 
     <header class="my-md-5 header">
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand header__link" href="#">
-                <img src="images/logo.png" alt="logo"> <b class="header__text">Lispum</b> Media
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Resources</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Articles</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand">
+            <div class="container flex-wrap">
+                <a class="navbar-brand header__link" href="#">
+                    <img src="images/logo.png" alt="logo"> <b class="header__text">Lispum</b> Media
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
-    <section class="section-main bg-color">
+    <section class="container section-main bg-color">
         <h2 class="section-main__header">Lipsum Media Presentation</h2>
-        <div class="row mx-4 section-main__content">
-            <div class="col-8">
-                <div class="row bg-dark block1">
-                    <div class="col-8">
+        <div class="row mx-4">
+            <div class="col-12 col-md-8">
+                <div class="row bg-dark">
+                    <div class="col-12 col-md-8 block1">
                         <h2 class="block1__mheader">Featuard projects</h2>
                         <iframe width="432" height="366" src="https://www.youtube.com/embed/NknaXtT7wKM" frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen class="w-100"></iframe>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-md-4 block1">
                         <h4 class="block1__header">client</h4>
                         <p class="block1__text">Jommy</p>
 
@@ -83,7 +90,7 @@
                     </div>
                 </div>
             </div>
-            <div class="pl-sm-5 col-4">
+            <div class="col-12 mt-3 col-md-4 mt-md-0">
                 <div class="card bg-white block1">
                     <div class="card-body">
                         <h5 class="card-title block1__header mt-0">Project description</h5>
@@ -101,12 +108,135 @@
             </div>
         </div>
     </section> <!-- section-main -->
-    <section class="row section-progress">
 
-    </section> <!-- section-progress -->
-    <!-- wrapper -->
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <section class="section-progress">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 block2">
+                    <h4 class="block2__header">our <span class="text-warning">services</span></h4>
+                    <div class="block2__content">
+                        <ul class="fa-ul">
+                            <li>
+                                <i class="fa-li fa fa-arrow-right bg-warning"></i>
+                                <a href="#" class="block2__link">Ac tristique sagittis turpis</a>
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-arrow-right bg-warning"></i>
+                                <a href="#" class="block2__link">Duis mus nec porttitor</a>
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-arrow-right bg-warning"></i>
+                                <a href="#" class="block2__link">Phasellus lectus cras</a>
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-arrow-right bg-warning"></i>
+                                <a href="#" class="block2__link">Ac tristique sagittis turpis</a>
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-arrow-right bg-warning"></i>
+                                <a href="#" class="block2__link">Ac tristique sagittis turpis</a>
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-arrow-right bg-warning"></i>
+                                <a href="#" class="block2__link">Ac tristique sagittis turpis</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 block2">
+                    <h4 class="block2__header">Did you <span class="text-warning">know ?</span></h4>
+                    <div>
+                        <p class="block2__content">
+                            Ac tristique sagittis turpis dis purus egestas! Duis mus nec porttitor hac ac dictumst,
+                            porttitor eros adipiscing elementum tincidunt urna mus porttitor odio, non tristique
+                            adipiscing
+                            lorem, sed nec vel adipiscing sit, quis platea parturient sit adipiscing et massa . Risus,
+                            placerat. Augue etiam et dis velit ut, auctor et, duis dolor nunc nunc, augue nisi nascetur,
+                            porta
+                        </p>
+                        <a href="#" class="btn btn-primary float-right my-3">Raed more</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 block2">
+                    <h4 class="block2__header"><span class="text-warning">Contact</span></h4>
+                    <div class="block2__content">
+                        <ul class="fa-ul">
+                            <li>
+                                <i class="fa fa-li fa-mobile"></i>
+                                <a href="tel:203-810-4300" class="block2__link block__link_contact">203-810-4300</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-li fa-print"></i>
+                                <a href="#" class="block2__link block__link_contact">203-810-4300</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-li fa-envelope"></i>
+                                <a href="mailto:Contact@lipsum.com"
+                                    class="block2__link block__link_contact">Contact@lipsum.com</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-li fa-home"></i>
+                                <p class="block2__link block__link_contact">
+                                    50 Washington street<br>
+                                    Sute 1048<br>
+                                    lipsume 0644
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- /.section-progress -->
+
+    <section class="section-clients">
+        <div class="container">
+            <h4 class="block2__header">Our <span class="text-warning">Clients</span></h4>
+            <div class="row">
+                <div class="col-2"><img src="images/clients/at.jpg" alt="at" class="img-fluid"></div>
+                <div class="col-2"><img src="images/clients/inc.jpg" alt="inc" class="img-fluid"></div>
+                <div class="col-2"><img src="images/clients/auto.jpg" alt="auto" class="img-fluid"></div>
+                <div class="col-2"><img src="images/clients/visa.jpg" alt="visa" class="img-fluid"></div>
+                <div class="col-2"><img src="images/clients/polar.jpg" alt="polar" class="img-fluid"></div>
+                <div class="col-2"><img src="images/clients/gap.jpg" alt="gap" class="img-fluid"></div>
+            </div>
+        </div>
+    </section>
+    <!-- /.section-clients -->
+
+    <footer class="mt-md-5">
+        <nav class="mt-md-5 navbar navbar-expand">
+            <div class="container flex-wrap">
+                <a class="navbar-brand header__link" href="#">
+                    <img src="images/logo.png" alt="logo"> <b class="header__text">Lispum</b> Media
+                </a>
+                <div id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link no-marker" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link no-marker" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link no-marker" href="#">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link no-marker" href="#">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link no-marker" href="#">Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link no-marker" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <p class="float-right copyright">&copy; 2009 lipsum media, LLC</p>
+                </div>
+            </div>
+        </nav>
+    </footer>
 </body>
 
 </html>

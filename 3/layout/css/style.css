@@ -16,13 +16,20 @@
     font-family: 'Helvetica LT Ultra Compresssed'; src: url('../fonts/HelveticaLTU.ttf');
     font-style: normal; font-weight: normal;
 }
+@font-face{
+    font-family: 'Font Awesome';
+    src: url('../fonts/fontawesome-webfont.ttf'),
+         url('../fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+    font-style: normal; font-weight: normal;
+}
 
-*{ padding: 0; margin: 0; font-size: 10px; }
+html{ font-size: 10px; font-family: 'Source Sans Pro', sans-serif; }
+body{ background-image: url('../images/bg.png'); }
 .bg-color{ background-color: #faa61a; }
 
-.panel{ height: 2.8rem; width: 40%; margin: 0; }
+.panel{ height: 2.8rem; min-width: 380px; max-width: 45%; }
 .form{ font: 1.6rem 'Century Gothic'; }
-.form__input{ height: 1.8rem;}
+.form__input{ height: 1.8rem; max-width: 200px;}
 .form__button{ text-transform: uppercase; }
 .form__input, .form__button{ font: 1.6rem 'Century Gothic'; }
 .social, .social span { font-size: 1.8rem; color: #ffffff; }
@@ -33,29 +40,44 @@
 .header__text{ font-weight: bold; font-size: 4.1rem; }
 
 .nav-link{ color: black; font-size: 1.4rem; text-transform: uppercase; }
-.nav-link::before{ content: " > "; color: #faa61a; }
+.nav-link::before{
+    content: "\f061"; color: #faa61a; font: normal 1.4rem 'Font Awesome';
+    padding-right: 1rem;
+}
 
 /*      SECTION-MAIN      SECTION-MAIN      SECTION-MAIN      SECTION-MAIN      SECTION-MAIN */
-.section-main{ height: 54.8rem; position: relative; padding: 0 2rem; }
+.section-main{ position: relative; padding: 0 2rem 1.8rem 2rem; }
 
 .section-main__header{ font: normal 12.4rem 'Helvetica LT Ultra Compresssed', sans-serif;}
-.block1{ height: 36.8rem; }
+.block1{ height: 37rem; overflow: auto; }
 .block1__mheader{
     font: italic 2.8rem 'Centure Gothic'; position: absolute; top: 5rem ; left: -1.3rem;
-    color: white; background-color: black;
+    color: white; background-color: rgba(0, 0, 0, 0.7);
 }
 .block1__header{
     margin-top: 1.8rem; display: inline-block; background-color: white;
-    text-transform: uppercase; font: bold 1.4rem 'Source Sans Pro', sans-serif;
+    text-transform: uppercase; font-size: 1.4rem; font-weight: bold;
 }
-.block1__text{ font: normal 1.4rem 'Source Sans Pro', sans-serif; color: white; }
+.block1__text{ font-size: 1.4rem; color: white; }
 .card{ border: 0; border-radius: 0; }
+.card-body{ flex: 0; }
 .card-text{ font: normal 1.4rem 'Source Sans Pro', sans-serif; }
 .btn-primary{ background: black; border: 0; border-radius: 0; position: relative; margin-right: 1.5rem; }
 .btn-primary::after{
-    content: " >"; background-color: #faa61a; position: absolute; right: -1.5rem; top: 0;
-    padding: .375rem .4rem; font-size: 1rem;
+    content: "\f061"; background-color: #faa61a; position: absolute; right: -1.5rem; top: 0;
+    padding: .375rem .4rem; font: normal 1.5rem 'Font Awesome'; color: black;
 }
 
 /*      SECTION-PROGRESS      SECTION-PROGRESS      SECTION-PROGRESS      SECTION-PROGRESS */
-.section-progress{ }
+.section-progress{ padding: 3.6rem 0; }
+.block2{ border: 1px solid #cccccc;  }
+.block2__header, .block2__header span{
+    font-size: 2.01rem; font-weight: bold; padding: 2.1rem 0; text-transform: uppercase;
+}
+.block2__content, .block2__content li i{ font-size: 1.8rem;  }
+.block2__link{ text-decoration: none; color: black; margin-left: 1rem; }
+.block__link_contact{ background: black; color: white; display: inline-block; margin: 0.5rem 0;}
+
+/*      FOOTER      FOOTER      FOOTER      FOOTER      FOOTER      FOOTER      FOOTER */
+.no-marker::before{ content: ''; font-size: 0; }
+.copyright{ font-size: 1.2rem; text-transform: uppercase; }
