@@ -6,26 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bak-one</title>
-    <link rel="stylesheet" href="vendors/css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="vendors/bootstrap/bootstrap-reboot.css">
+    <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/themify-icons/themify-icons.css">
+
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand logo" href="#">
-                <img src="img/ui/logo.jpg" alt="logo">
-                <div>
-                    <h2>BAK-ONE</h2>
-                    <p>One Page Flat Template</p>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <div class="logo">
+                    <img src="img/ui/logo.jpg" alt="logo">
+                    <div>
+                        <h2>BAK-ONE</h2>
+                        <p>One Page Flat Template</p>
+                    </div>
                 </div>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
+            <div class="collapse navbar-collapse float-right" id="navbarText">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home</a>
                     </li>
@@ -39,11 +46,278 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
+            </div>
         </nav>
     </header>
-    <section class="section-brand"></section>
 
-    <script src="vendors/js/bootstrap.min.js"></script>
+    <section class="section-brand">
+        <div class="container">
+            <div class="wrapper">
+                <h2 class="section-brand__header">We Build <span>Brand</span></h2>
+                <p class="section-brand__content">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </p>
+                <a href="#" class="btn">Learn More</a><Br>
+                <a href="#" class="btn-symbol ti-arrow-circle-down"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-5 section-portfolio">
+        <div class="container">
+            <div class="wrapper">
+                <h2 class="section-portfolio__header">Portfolio</h2>
+                <p class="section-portfolio__content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                <ul class="nav" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab"
+                            aria-controls="all" aria-selected="true">All</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="webdesign-tab" data-toggle="tab" href="#webdesign" role="tab"
+                            aria-controls="webdesign" aria-selected="false">Web design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="graphicdesign-tab" data-toggle="tab" href="#graphicdesign" role="tab"
+                            aria-controls="graphicdesign" aria-selected="false">Graphic design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="flatdesign-tab" data-toggle="tab" href="#flatdesign" role="tab"
+                            aria-controls="flatdesign" aria-selected="false">Flat design</a>
+                    </li>
+                </ul>
+            </div> <!-- wrapper -->
+        </div> <!-- container -->
+        <div class="container">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                    <div class="row">
+                        <!-- row 1 -->
+                        <!-- all-tab -->
+                        <div class="col-3 portfolio">
+                            <a href="#" class="portfolio__link">
+                                <img src="img/portfolio/camera.jpg" alt="camera" class="portfolio__img">
+                                <div class="portfolio__container">
+                                    <span class="ti-search portfolio__search"></span>
+                                    <div>
+                                        <h4 class="portfolio__descr-header">Example Title</h4>
+                                        <p class="portfolio__descr-content">Web Design</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-3 portfolio">
+                            <a href="#" class="portfolio__link">
+                                <img src="img/portfolio/music.jpg" alt="music" class="portfolio__img">
+                                <div class="portfolio__container">
+                                    <span class="ti-search portfolio__search"></span>
+                                    <div>
+                                        <h4 class="portfolio__descr-header">Example Title</h4>
+                                        <p class="portfolio__descr-content">Web Design</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-3 portfolio">
+                            <a href="#" class="portfolio__link">
+                                <img src="img/portfolio/settings.jpg" alt="settings" class="portfolio__img">
+                                <div class="portfolio__container">
+                                    <span class="ti-search portfolio__search"></span>
+                                    <div>
+                                        <h4 class="portfolio__descr-header">Example Title</h4>
+                                        <p class="portfolio__descr-content">Web Design</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-3 portfolio">
+                            <a href="#" class="portfolio__link">
+                                <img src="img/portfolio/compass.jpg" alt="compass" class="portfolio__img">
+                                <div class="portfolio__container">
+                                    <span class="ti-search portfolio__search"></span>
+                                    <div>
+                                        <h4 class="portfolio__descr-header">Example Title</h4>
+                                        <p class="portfolio__descr-content">Web Design</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <!-- row 2 -->
+                        <!-- all-tab -->
+                        <div class="col-3 portfolio">
+                            <a href="#" class="portfolio__link">
+                                <img src="img/portfolio/phone.jpg" alt="phone" class="portfolio__img">
+                                <div class="portfolio__container">
+                                    <span class="ti-search portfolio__search"></span>
+                                    <div>
+                                        <h4 class="portfolio__descr-header">Example Title</h4>
+                                        <p class="portfolio__descr-content">Web Design</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-3 portfolio">
+                            <a href="#" class="portfolio__link">
+                                <img src="img/portfolio/graf.jpg" alt="graf" class="portfolio__img">
+                                <div class="portfolio__container">
+                                    <span class="ti-search portfolio__search"></span>
+                                    <div>
+                                        <h4 class="portfolio__descr-header">Example Title</h4>
+                                        <p class="portfolio__descr-content">Web Design</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-3 portfolio">
+                            <a href="#" class="portfolio__link">
+                                <img src="img/portfolio/camera.jpg" alt="camera" class="portfolio__img">
+                                <div class="portfolio__container">
+                                    <span class="ti-search portfolio__search"></span>
+                                    <div>
+                                        <h4 class="portfolio__descr-header">Example Title</h4>
+                                        <p class="portfolio__descr-content">Web Design</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-3 portfolio">
+                            <a href="#" class="portfolio__link">
+                                <img src="img/portfolio/music.jpg" alt="music" class="portfolio__img">
+                                <div class="portfolio__container">
+                                    <span class="ti-search portfolio__search"></span>
+                                    <div>
+                                        <h4 class="portfolio__descr-header">Example Title</h4>
+                                        <p class="portfolio__descr-content">Web Design</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="webdesign" role="tabpanel" aria-labelledby="webdesign-tab">
+                    webdesign-tab
+                </div>
+                <div class="tab-pane fade" id="graphicdesign" role="tabpanel" aria-labelledby="graphicdesign-tab">
+                    grapicdesign-tab
+                </div>
+                <div class="tab-pane fade" id="flatdesign" role="tabpanel" aria-labelledby="flatdesign-tab">
+                    flatdesign-tab
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-aboutus">
+        <div class="container">
+            <h2 class="section-aboutus__header">About Us</h2>
+            <p class="section-aboutus__content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/aboutus/mellanie.jpg" class="card-img-top" alt="Mellanie">
+                        <div class="card-panel">
+                            <a href="#"><span class="ti-facebook"></span></a>
+                            <a href="#"><span class="ti-twitter"></span></a>
+                            <a href="#"><span class="ti-google"></span></a>
+                            <a href="#"><span class="ti-dribbble"></span></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Melannie Doe</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Project Manager</h6>
+                            <p class="card-text">
+                                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                                suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/aboutus/jhonnie.jpg" class="card-img-top" alt="jhonnie">
+                        <div class="card-panel">
+                            <a href="#"><span class="ti-facebook"></span></a>
+                            <a href="#"><span class="ti-twitter"></span></a>
+                            <a href="#"><span class="ti-google"></span></a>
+                            <a href="#"><span class="ti-dribbble"></span></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Jhonnie Doe</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Graphic Designer</h6>
+                            <p class="card-text">
+                                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                                suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/aboutus/daniel.jpg" class="card-img-top" alt="daniel">
+                        <div class="card-panel">
+                            <a href="#"><span class="ti-facebook"></span></a>
+                            <a href="#"><span class="ti-twitter"></span></a>
+                            <a href="#"><span class="ti-google"></span></a>
+                            <a href="#"><span class="ti-dribbble"></span></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Daniel Doe</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Web Designer</h6>
+                            <p class="card-text">
+                                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                                suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-contactus">
+        <div class="container">
+            <h2 class="section-contactus__header">Contact Us</h2>
+            <p class="section-contactus__content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            <div class="row">
+                <div class="col-8">
+                    <form action="" class="form-contact">
+                        <input type="text" placeholder="Your name" class="form-contact__input">
+                        <input type="mail" placeholder="Your mail" class="form-contact__input"><br>
+                        <textarea placeholder="Your message" class="form-contact__text"></textarea>
+                        <a href="#" class="btn" type="submit">Submit</a>
+                    </form>
+                </div>
+                <div class="col-4">
+                    <h2 class="section-contactus__subheader">INFORMATION</h2>
+                    <ul class="loc">
+                        <li class="loc__item"><i class="ti-location-pin"></i>
+                            <span>Bak-One Company</span><br>
+                            <span>12345 Hollywood Bvld Street</span><br>
+                            <span>Los Angeles, California</span>
+                        </li>
+                        <li class="loc__item"><i class="ti-mobile"></i>
+                            <a href="call:+444123456" class="loc__link">+444 (Phone) 123456</a>
+                        </li>
+                        <li class="loc__item"><i class="ti-printer"></i>
+                            <a href="#" class="loc__link">+123 (FAX) 0011223</a>
+                        </li>
+                        <li class="loc__item"><i class="ti-email"></i>
+                            <a href="mailto:info@bak-onecompany.com" class="loc__link">info@bak-onecompany.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="vendors/jquery/jquery-3.4.1.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
 </body>
 
 </html>

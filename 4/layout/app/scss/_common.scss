@@ -1,0 +1,7 @@
+html{ font-size: calc(10/16rem); }
+
+.wrapper{
+    max-width: $wrapper-maxwidth;
+    min-width: $wrapper-minwidth;
+    margin: auto;
+}

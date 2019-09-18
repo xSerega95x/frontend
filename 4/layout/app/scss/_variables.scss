@@ -1,0 +1,29 @@
+$fontLato: 'Lato', sans-serif;
+
+$color1: #444444;
+$color2: #ffffff;
+$color3: #383433;
+$btn-bg: #1bbc9b;
+$srch-color: rgba(0, 0, 0, 0.356);
+$aboutus-bg: #16a086;
+
+$wrapper-maxwidth: 578px;
+$wrapper-minwidth: 100px;
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700&display=swap');
+@font-face {
+    font-family: 'Lato'; src: url('../fonts/Lato-Regular.ttf');
+    font-style: normal; font-weight: normal;
+}
+@font-face {
+    font-family: 'Lato'; src: url('../fonts/Lato-Light.ttf');
+    font-style: normal; font-weight: lighter;
+}
+@font-face {
+    font-family: 'Lato'; src: url('../fonts/Lato-Bold.ttf');
+    font-style: normal; font-weight: bold;
+}
+@font-face {
+    font-family: 'Lato'; src: url('../fonts/Lato-RegularItalic.ttf');
+    font-style: italic; font-weight: normal;
+}

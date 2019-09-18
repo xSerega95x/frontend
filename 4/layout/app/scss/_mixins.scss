@@ -1,0 +1,28 @@
+@mixin fontLato($weight: normal, $fsize: 1rem, $color: $color1){
+    font: $weight $fsize $fontLato;
+    color: $color;
+}
+
+@mixin btn-bg($bg: $btn-bg, $t-color: $color2){
+    background-color: $bg;
+    color: $t-color;
+}
+
+@mixin button($fsize: 13px, $b-radius: 0, $t-color: $color2, $bg-color: $btn-bg){
+    @include fontLato(bold, $fsize, $t-color);
+    @include btn-bg($bg-color, $t-color);
+
+    border-radius: $b-radius;
+    padding: 1.3rem;
+    margin: 3.2rem auto 2.1rem auto;
+    text-transform: uppercase;
+}
+
+@mixin list($fsize: 1.3rem, $t-color: $color1){
+    position: relative;
+    list-style-type: none;
+    @include fontLato(bold, $fsize, $t-color);
+
+    i{ position: absolute; left: $fsize; font-size: $fsize; }
+    a{ color: $color1; }
+}

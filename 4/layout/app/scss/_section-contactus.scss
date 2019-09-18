@@ -1,0 +1,17 @@
+.section-contactus{
+    &__header{ }
+    &__subheader{ @include fontLato($fsize: 1.4rem); padding-bottom: 2.1rem; }
+    &__content{ }
+
+    .form-contact{
+        &__input{ }
+        &__text{ }
+    }
+
+    .loc{
+        @include list(1.4rem, $color1);
+
+        &__item { padding-bottom: 1.3rem; }
+        &__link{ }
+    }
+}

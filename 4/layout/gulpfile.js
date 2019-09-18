@@ -1,4 +1,4 @@
-var gulp       = require('gulp'), // Подключаем Gulp
+﻿var gulp       = require('gulp'), // Подключаем Gulp
 	sass         = require('gulp-sass'), //Подключаем Sass пакет,
 	browserSync  = require('browser-sync'), // Подключаем Browser Sync
 	uglify       = require('gulp-uglifyjs'), // Подключаем gulp-uglifyjs (для сжатия JS)

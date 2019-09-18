@@ -1,0 +1,33 @@
+.section-aboutus{
+    background-color: $aboutus-bg;
+    margin-top: 6rem;
+
+    &__header{ @include fontLato(normal, 2.8rem, $color2); padding-top: 6rem; }
+    &__content{ @include fontLato(normal, 1.4rem, $color2); }
+    &__header, &__content{ text-align: center; }
+
+    .card{
+        margin: 4.2rem 0 6.9rem 0;
+        border: 0;
+        border-radius: 0;
+
+        &-img-top{ position: relative; }
+        &:hover .card-panel{ cursor: pointer; display: block; }
+
+        &-panel{
+            position: absolute;
+            top: 9.3rem;
+            left: 15%;
+            padding: 1rem;
+            background-color: rgba($aboutus-bg, 0.5);
+            display: none;
+
+            a:hover span, a{ color: $btn-bg; text-decoration: none; }
+            span{ color: $color2; font-size: 2.9rem; margin-right: 2.2rem; }
+        }
+
+        &-title{ @include fontLato(normal, 1.8rem, $color1); }
+        &-subtitle{ font-style: italic; }
+        &-subtitle, &-text{ @include fontLato(normal, 1.4rem, $color1); }
+    }
+}

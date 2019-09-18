@@ -1,0 +1,19 @@
+.section-brand{
+    background: url('../img/brand/brand.jpg') 100% 100% no-repeat;
+    background-size: cover; height: 45.2rem;
+
+    &__header{
+        @include fontLato(lighter, 5.5rem, $color2);
+        padding: 6.2rem 0 3.1rem 0;
+        text-align: center;
+
+        span{
+            @include fontLato(bold, 5.5rem, $color2);
+            text-transform: uppercase;
+        }
+    }
+
+    &__content{
+        @include fontLato(lighter, 1.8rem, $color2);
+    }
+}

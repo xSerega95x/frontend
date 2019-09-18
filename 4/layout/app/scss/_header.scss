@@ -1,0 +1,12 @@
+header{
+    .logo{
+        display: flex; align-items: center;
+        h2{ @include fontLato(bold, 20px); margin-top: 18px; line-height: 5px; }
+        p{ @include fontLato($fsize: 14px); }
+    }
+
+    .nav{
+        &-link{ @include fontLato($fsize: 1.4rem); text-transform: uppercase; }
+        &-link:hover{ @include btn-bg; cursor: pointer; }
+    }
+}

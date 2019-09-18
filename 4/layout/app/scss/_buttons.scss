@@ -1,0 +1,25 @@
+.btn{
+    @include button;
+   
+    width: 120px;
+    display: block;
+    margin: 3.2rem auto 2.1rem auto;
+}
+
+.btn-symbol{
+    $fsize: 49px;
+    @include button($fsize, 25px, $color3, $color2);
+
+    font-family: 'themify';
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+    line-height: $fsize;
+    width: $fsize;
+    font-weight: 900;
+
+    &:hover{
+        text-decoration: none;
+        color: $color1;
+    }
+}

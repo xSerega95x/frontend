@@ -1,0 +1,30 @@
+.section-portfolio{
+    &__header{ @include fontLato(normal, 2.8rem, $color1); text-align: center; }
+    &__content{ @include fontLato(normal, 1.6rem, $color1); text-align: center; }
+
+    .nav{
+        justify-content: center;
+
+        &-link{ @include button(); margin-right: 1rem; }
+        &-link.active{ background-color: darken($btn-bg, 10%); color: $color2; }
+    }
+    
+    .portfolio{
+        &__link{ color: $color2; }
+        &__link:hover .portfolio__container{ display: block; }
+        &__img{ max-width: 100%; position: relative; }
+        &__container{ position: absolute; left: 22%; top: 4rem; display: none; }
+        &__container:hover{ display: block; }
+        &__container div{ padding-top: 4.1rem; }
+        &__search{
+            font-size: 2.1rem;
+            background-color: $srch-color;
+            color: $color2;
+            padding: 1.2rem;
+            border-radius: 4rem;
+            margin: 2.5rem;
+        }
+        &__descr-header{ @include fontLato(normal, 1.8rem, $color2); }
+        &__descr-content{ @include fontLato(normal, 1.4rem, $color2); }
+    }
+}
