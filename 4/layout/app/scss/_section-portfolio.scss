@@ -5,7 +5,7 @@
     .nav{
         justify-content: center;
 
-        &-link{ @include button(); margin-right: 1rem; }
+        &-link{ width: auto; margin-right: 1rem; }
         &-link.active{ background-color: darken($btn-bg, 10%); color: $color2; }
     }
     

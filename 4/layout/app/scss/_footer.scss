@@ -1,0 +1,10 @@
+.footer{
+    position: relative;
+
+    background-color: $footer-bg;
+    padding: 3.4rem 0;
+
+    &__copyright{ @include fontLato(normal, 1.4rem, $color2); }
+    &__button{ position: absolute; top: 25%; right: 4.2rem; }
+    
+}

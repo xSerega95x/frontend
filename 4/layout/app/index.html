@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="#">
                 <div class="logo">
@@ -29,21 +29,21 @@
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon ti-menu"></span>
             </button>
             <div class="collapse navbar-collapse float-right" id="navbarText">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -59,31 +59,31 @@
                     nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                 </p>
                 <a href="#" class="btn">Learn More</a><Br>
-                <a href="#" class="btn-symbol ti-arrow-circle-down"></a>
+                <a href="#portfolio" class="btn-symbol-circle ti-arrow-circle-down"></a>
             </div>
         </div>
     </section>
 
-    <section class="pt-5 section-portfolio">
+    <section id="portfolio" class="pt-5 section-portfolio">
         <div class="container">
             <div class="wrapper">
                 <h2 class="section-portfolio__header">Portfolio</h2>
                 <p class="section-portfolio__content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                 <ul class="nav" id="myTab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab"
+                        <a class="btn nav-link active" id="all-tab" data-toggle="tab" href="#block-all" role="tab"
                             aria-controls="all" aria-selected="true">All</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="webdesign-tab" data-toggle="tab" href="#webdesign" role="tab"
+                        <a class="btn nav-link" id="webdesign-tab" data-toggle="tab" href="#block-webdesign" role="tab"
                             aria-controls="webdesign" aria-selected="false">Web design</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="graphicdesign-tab" data-toggle="tab" href="#graphicdesign" role="tab"
-                            aria-controls="graphicdesign" aria-selected="false">Graphic design</a>
+                        <a class="btn nav-link" id="graphicdesign-tab" data-toggle="tab" href="#block-graphicdesign"
+                            role="tab" aria-controls="graphicdesign" aria-selected="false">Graphic design</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="flatdesign-tab" data-toggle="tab" href="#flatdesign" role="tab"
+                        <a class="btn nav-link" id="flatdesign-tab" data-toggle="tab" href="#block-flatdesign" role="tab"
                             aria-controls="flatdesign" aria-selected="false">Flat design</a>
                     </li>
                 </ul>
@@ -91,7 +91,7 @@
         </div> <!-- container -->
         <div class="container">
             <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                <div class="tab-pane fade show active" id="block-all" role="tabpanel" aria-labelledby="all-tab">
                     <div class="row">
                         <!-- row 1 -->
                         <!-- all-tab -->
@@ -197,25 +197,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="webdesign" role="tabpanel" aria-labelledby="webdesign-tab">
+                <div class="tab-pane fade" id="block-webdesign" role="tabpanel" aria-labelledby="webdesign-tab">
                     webdesign-tab
                 </div>
-                <div class="tab-pane fade" id="graphicdesign" role="tabpanel" aria-labelledby="graphicdesign-tab">
+                <div class="tab-pane fade" id="block-graphicdesign" role="tabpanel" aria-labelledby="graphicdesign-tab">
                     grapicdesign-tab
                 </div>
-                <div class="tab-pane fade" id="flatdesign" role="tabpanel" aria-labelledby="flatdesign-tab">
+                <div class="tab-pane fade" id="block-flatdesign" role="tabpanel" aria-labelledby="flatdesign-tab">
                     flatdesign-tab
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section-aboutus">
+    <section id="about" class="section-aboutus">
         <div class="container">
             <h2 class="section-aboutus__header">About Us</h2>
             <p class="section-aboutus__content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
             <div class="row">
-                <div class="col-4">
+                <div class="col-12 col-sm-4">
                     <div class="card">
                         <img src="img/aboutus/mellanie.jpg" class="card-img-top" alt="Mellanie">
                         <div class="card-panel">
@@ -234,7 +234,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-sm-4">
                     <div class="card">
                         <img src="img/aboutus/jhonnie.jpg" class="card-img-top" alt="jhonnie">
                         <div class="card-panel">
@@ -253,7 +253,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-sm-4">
                     <div class="card">
                         <img src="img/aboutus/daniel.jpg" class="card-img-top" alt="daniel">
                         <div class="card-panel">
@@ -276,26 +276,26 @@
         </div>
     </section>
 
-    <section class="section-contactus">
+    <section id="contact" class="section-contactus">
         <div class="container">
             <h2 class="section-contactus__header">Contact Us</h2>
             <p class="section-contactus__content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
             <div class="row">
-                <div class="col-8">
+                <div class="col-12  col-sm-7">
                     <form action="" class="form-contact">
                         <input type="text" placeholder="Your name" class="form-contact__input">
-                        <input type="mail" placeholder="Your mail" class="form-contact__input"><br>
+                        <input type="mail" placeholder="Your mail" class="form-contact__input float-right">
                         <textarea placeholder="Your message" class="form-contact__text"></textarea>
-                        <a href="#" class="btn" type="submit">Submit</a>
+                        <a href="#" class="btn float-right" type="submit">Submit</a>
                     </form>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-sm-5">
                     <h2 class="section-contactus__subheader">INFORMATION</h2>
                     <ul class="loc">
-                        <li class="loc__item"><i class="ti-location-pin"></i>
-                            <span>Bak-One Company</span><br>
-                            <span>12345 Hollywood Bvld Street</span><br>
-                            <span>Los Angeles, California</span>
+                        <li class="loc__item"><i class="ti-location-pin"></i><span>
+                                Bak-One Company<br>
+                                12345 Hollywood Bvld Street<br>
+                                Los Angeles, California</span>
                         </li>
                         <li class="loc__item"><i class="ti-mobile"></i>
                             <a href="call:+444123456" class="loc__link">+444 (Phone) 123456</a>
@@ -312,12 +312,21 @@
         </div>
     </section>
 
+    <footer class="footer">
+        <div class="container">
+            <span class="footer__copyright">&copy; Copyright 2013 Bak-One | One Page Flat Template</span>
+            <a href="#home" class="ti-angle-up btn-symbol-square footer__button"></a>
+        </div>
+    </footer>
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <script src="vendors/jquery/jquery-3.4.1.min.js"></script>
     <script src="vendors/bootstrap/bootstrap.min.js"></script>
+
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>

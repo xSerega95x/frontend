@@ -3,26 +3,46 @@
     color: $color;
 }
 
-@mixin btn-bg($bg: $btn-bg, $t-color: $color2){
-    background-color: $bg;
+@mixin button_base($b-radius, $t-color, $bg-color){
+    background-color: $bg-color;
     color: $t-color;
-}
 
-@mixin button($fsize: 13px, $b-radius: 0, $t-color: $color2, $bg-color: $btn-bg){
-    @include fontLato(bold, $fsize, $t-color);
-    @include btn-bg($bg-color, $t-color);
-
+    display: block;
     border-radius: $b-radius;
-    padding: 1.3rem;
-    margin: 3.2rem auto 2.1rem auto;
+    padding: 1rem;
     text-transform: uppercase;
 }
 
+@mixin button-main($fsize: 13px, $b-radius: 0, $t-color: $color2, $bg-color: $btn-bg){
+    @include button_base($b-radius, $t-color, $bg-color);
+    @include fontLato(bold, $fsize, $t-color);
+}
+
+@mixin button-symbol($fsize: 13px, $b-radius: 0, $t-color: $color2, $bg-color: $btn-bg){
+    @include button_base($b-radius, $t-color, $bg-color);
+
+    font: normal $fsize 'themify';
+    padding: 0;
+    width: $fsize;
+    font-weight: 900;
+
+    &:hover{ text-decoration: none; }
+}
+
 @mixin list($fsize: 1.3rem, $t-color: $color1){
-    position: relative;
-    list-style-type: none;
     @include fontLato(bold, $fsize, $t-color);
 
-    i{ position: absolute; left: $fsize; font-size: $fsize; }
-    a{ color: $color1; }
+    list-style-type: none;
+    position: relative;
+
+    li{
+        padding-bottom: 1.3rem;
+
+        i{
+            position: absolute;
+            left: 0;
+            font-size: $fsize;
+        }
+        a{ color: $color1; }
+    }
 }

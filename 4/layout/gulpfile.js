@@ -1,8 +1,8 @@
 ﻿var gulp       = require('gulp'), // Подключаем Gulp
 	sass         = require('gulp-sass'), //Подключаем Sass пакет,
 	browserSync  = require('browser-sync'), // Подключаем Browser Sync
-	uglify       = require('gulp-uglifyjs'), // Подключаем gulp-uglifyjs (для сжатия JS)
-	cssnano      = require('gulp-cssnano'), // Подключаем пакет для минификации CSS
+	uglify       = require('gulp-uglify'), // Подключаем gulp-uglifyjs (для сжатия JS)
+	cleanCss     = require('gulp-clean-css'), // Подключаем пакет для минификации CSS
 	rename       = require('gulp-rename'), // Подключаем библиотеку для переименования файлов
 	del          = require('del'), // Подключаем библиотеку для удаления файлов и папок
 	autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
@@ -11,7 +11,7 @@ gulp.task('sass', function() { // Создаем таск scss
 	return gulp.src('app/scss/style.scss') // Берем источник
 		.pipe(sass()) // Преобразуем scss в CSS посредством gulp-sass
 		.pipe(autoprefixer(['last 10 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
-		.pipe(cssnano()) // Сжимаем
+		.pipe(cleanCss({ compatibility: 'ie9' })) // Сжимаем
 		.pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
 		.pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
 		.pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении

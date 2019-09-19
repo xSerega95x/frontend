@@ -7,6 +7,6 @@ header{
 
     .nav{
         &-link{ @include fontLato($fsize: 1.4rem); text-transform: uppercase; }
-        &-link:hover{ @include btn-bg; cursor: pointer; }
+        &-link:hover{ background-color: $btn-bg; color: $color2; cursor: pointer; }
     }
 }

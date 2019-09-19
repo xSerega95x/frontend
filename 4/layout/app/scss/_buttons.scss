@@ -1,25 +1,20 @@
 .btn{
-    @include button;
+    @include button-main;
    
-    width: 120px;
-    display: block;
+    width: 120px; 
     margin: 3.2rem auto 2.1rem auto;
 }
 
-.btn-symbol{
-    $fsize: 49px;
-    @include button($fsize, 25px, $color3, $color2);
+.btn-symbol-circle{
+    @include button-symbol(49px, 25px, $color3, $color2);
 
-    font-family: 'themify';
-    padding: 0;
     margin: 0 auto;
-    display: block;
-    line-height: $fsize;
-    width: $fsize;
-    font-weight: 900;
+    &:hover{ color: $color1; }
+}
 
-    &:hover{
-        text-decoration: none;
-        color: $color1;
-    }
+.btn-symbol-square{
+    @include button-symbol(20px, 0, $color2, $btn-bg);
+     padding: 13px 11px;
+     width: 44px;
+     height: 44px;
 }
