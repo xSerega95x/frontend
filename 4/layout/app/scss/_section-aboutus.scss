@@ -17,13 +17,13 @@
         &-panel{
             position: absolute;
             top: 9.3rem;
-            left: 15%;
+            left: 5.5%;
             padding: 1rem;
             background-color: rgba($aboutus-bg, 0.5);
             display: none;
 
             a:hover span, a{ color: $btn-bg; text-decoration: none; }
-            span{ color: $color2; font-size: 2.9rem; margin-right: 2.2rem; }
+            span{ color: $color2; font-size: 2.9rem; margin-right: 0.4rem; }
         }
 
         &-title{ @include fontLato(normal, 1.8rem, $color1); }

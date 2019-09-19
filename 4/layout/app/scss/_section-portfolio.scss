@@ -13,18 +13,17 @@
         &__link{ color: $color2; }
         &__link:hover .portfolio__container{ display: block; }
         &__img{ max-width: 100%; position: relative; }
-        &__container{ position: absolute; left: 22%; top: 4rem; display: none; }
-        &__container:hover{ display: block; }
-        &__container div{ padding-top: 4.1rem; }
+        &__container{ position: absolute; left: 22%; top: 40px; display: none; }
+        &__container div{ padding-top: 40px; }
         &__search{
-            font-size: 2.1rem;
+            font-size: 21px;
             background-color: $srch-color;
             color: $color2;
-            padding: 1.2rem;
-            border-radius: 4rem;
-            margin: 2.5rem;
+            padding: 12px;
+            border-radius: 40px;
+            margin: 25px;
         }
-        &__descr-header{ @include fontLato(normal, 1.8rem, $color2); }
-        &__descr-content{ @include fontLato(normal, 1.4rem, $color2); }
+        &__descr-header{ @include fontLato(normal, 18px, $color2); }
+        &__descr-content{ @include fontLato(normal, 14px, $color2); }
     }
 }
