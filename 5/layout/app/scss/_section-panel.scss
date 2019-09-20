@@ -1,0 +1,11 @@
+.section-panel{
+    background-color: $c-panel-bg;
+
+    .nav{
+        justify-content: flex-end;
+
+        &-link{
+            color: $c-text-1;
+        }
+    }
+}
