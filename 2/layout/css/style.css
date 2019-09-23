@@ -14,6 +14,7 @@
 
 *{ margin: 0; padding: 0; }
 .wrapper{ width: 1274px; margin: 0 auto; }
+html{ font-size: 16px; }
 
 /* DRY */
 .cols{ display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
