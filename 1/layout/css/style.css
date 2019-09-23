@@ -48,7 +48,7 @@ header{ font-family: 'Open Sans', sans-serif; }
 .content{ flex-grow: 3;  font-family: 'Open Sans', sans-serif; margin: 3rem 0; }
 .content__header{ font-size: 2.4rem; color: rgb(101, 101, 101); font-weight: normal; }
 .content section{ align-items: stretch; }
-.cblock{border: 2px solid rgb(239, 241, 240); padding: 0.8rem; margin: 20px 0; width: 30%; }
+.cblock{ border: 2px solid rgb(239, 241, 240); padding: 0.8rem; margin: 2rem 0; width: 30%; }
 .cblock__photo{ position: relative; height: 228px; background-color: rgb(239, 241, 240); }
 .photo-sale{ position: absolute; top: 0; left: 0; }
 .photo-new{ position: absolute; top: 0; right: 0; }
@@ -79,8 +79,8 @@ footer{ font-family: 'Open Sans', sans-serif; }
 .panel__header{font-weight: normal; padding-left: 1.5rem; }
 
 .footer{ background-color: rgb(57, 160, 185); align-items: flex-start; }
-.fblock{ margin: 44px 28px 55px 0; color: rgb(239, 241, 240); font-size: 13px; }
-.fblock__header{ font-size: 20px; padding-bottom: 20px; font-weight: normal; }
+.fblock{ margin: 4.4rem 2.8rem 5.5rem 0; color: rgb(239, 241, 240); font-size: 1.3rem;}
+.fblock__header{ font-size: 2rem; padding-bottom: 2rem; font-weight: normal; }
 .fblock__line{ margin: 1.5rem 0; height: 0.1rem; background-color: #4bb4c9; }
 .fblock__info{ flex-wrap: nowrap; align-items: flex-start; }
 .fblock__info a{ text-decoration: none; color: rgb(239, 241, 240); }
