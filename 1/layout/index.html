@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Leo Shop</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <div class="panel wrapper">
+        <div class="wrapper flex panel">
                 <div class="panel__i18n">
                     <label for="Language">Language:</label>
                     <select name="Language" id="Language">
@@ -26,39 +26,51 @@
                     </select>
                 </div> <!-- .panel__i18n -->
 
-                <ul class="panel__menu">
-                    <li><a href="#">Account</a> | </li>
-                    <li><a href="#">Wishlist</a> | </li>
-                    <li><a href="#">Checkout</a> | </li>
-                    <li><a href="#">Log In</a> | </li>
-                    <li><a href="#">Sign Up</a></li>
-                </ul>
+                <div class="panel__menu">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#" class="menu__link menu__link_panel">Account</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link menu__link_panel">Wishlist</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link menu__link_panel">Checkout</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link menu__link_panel">Log In</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link menu__link_panel">Sign Up</a></li>
+                    </ul>
+                </div>
         </div>
             
-        <div class="header wrapper">
-            <div>
+        <div class="wrapper flex header">
+            <div class="flex">
                 <div class="header__logo">
                     <a href="/">
                         <img src="images/ui/logo.png" alt="logo">
                     </a>
                 </div>
-                <ul class="header__menu">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">WOMEN</a></li>
-                    <li><a href="#">MAN</a></li>
-                    <li><a href="#">OTHER</a></li>
-                    <li><a href="#">PURCHASE</a></li>
-                </ul>
+                <div class="header__menu">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#" class="menu__link menu__link_header">HOME</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link menu__link_header">WOMEN</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link menu__link_header">MAN</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link menu__link_header">OTHER</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link menu__link_header">PURCHASE</a></li>
+                    </ul>
+                </div>
+                
             </div> 
-            <div>
-                <form action="#" class="header__search" >
-                    <input type="text" placeholder="search..."><!--
-                    --><button type="submit">?</button>
-                </form>
+            <div class="flex">
+                <div class="header__search">
+                    <form action="#" class="search" >
+                        <input type="text" placeholder="search..." class="search__input"><!--
+                        --><button type="submit" class="search__button">?</button>
+                    </form>
+                </div>
+                
                 <div class="header__shop">
-                    <a href="#"><img src="images/ui/discont.png" alt="discont"></a>
-                    <a href="#"><img src="images/ui/backet.png" alt="backet"></a>
-                    <div>CART(<span>0</span>)</div>
+                    <div class="flex shop">
+                        <div class="flex shop__content">
+                            <a href="#" class="shop__link"><img src="images/ui/discont.png" alt="discont"></a>
+                            <a href="#" class="shop__link"><img src="images/ui/backet.png" alt="backet"></a>
+                        </div>
+                        <div>CART(<span class="shop__cart">0</span>)</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -71,10 +83,10 @@
         <div><img src="images/slick/main-slide_1.jpg" alt="main-slide3"></div>
     </section>
 
-    <div class="body wrapper">
+    <div class="wrapper flex">
         <div class="content">
             <h2 class="content__header">FEATURED PRODUCTS</h2>
-            <section>
+            <section class="flex">
                 <div class="cblock">
                     <div class="cblock__photo">
                         <!-- product -->
@@ -84,7 +96,7 @@
                         <!-- new -->
                         <img class="photo-new" src="images/content/new.png" alt="photo-new">
                     </div>
-                    <div class="cblock__info">
+                    <div class="flex cblock__info">
                         <div>
                             <h4 class="cblock__header">Lorem Ipsum is simply.</h4>
                             <span class="cblock__price">$388</span>
@@ -102,7 +114,7 @@
                         <!-- new -->
                         <!-- <img class="photo-new" src="images/content/new.png" alt="photo-new"> -->
                     </div>
-                    <div class="cblock__info">
+                    <div class="flex cblock__info">
                         <div>
                             <h4 class="cblock__header">Nullam vestibulum.</h4>
                             <span class="cblock__price">$90.00</span>
@@ -120,7 +132,7 @@
                         <!-- new -->
                         <!-- <img class="photo-new" src="images/content/new.png" alt="photo-new"> -->
                     </div>
-                    <div class="cblock__info">
+                    <div class="flex cblock__info">
                         <div>
                             <h4 class="cblock__header">Donec et lorem suscipit.</h4>
                             <s>$460</s>
@@ -130,7 +142,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="flex">
                 <!-- row2 -->
                 <div class="cblock">
                     <div class="cblock__photo">
@@ -141,7 +153,7 @@
                         <!-- new -->
                         <!-- <img class="photo-new" src="images/content/new.png" alt="photo-new"> -->
                     </div>
-                    <div class="cblock__info">
+                    <div class="flex cblock__info">
                         <div>
                             <h4 class="cblock__header">Curabitur pretium dui.</h4>
                             <span class="cblock__price">$180.00</span>
@@ -159,7 +171,7 @@
                         <!-- new -->
                         <img class="photo-new" src="images/content/new.png" alt="photo-new">
                     </div>
-                    <div class="cblock__info">
+                    <div class="flex cblock__info">
                         <div>
                             <h4 class="cblock__header">Lorem Ipsum is simply</h4>
                             <span class="cblock__price">$278.00</span>
@@ -177,7 +189,7 @@
                         <!-- new -->
                         <!-- <img class="photo-new" src="images/content/new.png" alt="photo-new"> -->
                     </div>
-                    <div class="cblock__info">
+                    <div class="flex cblock__info">
                         <div>
                             <h4 class="cblock__header">Sed tempus tellus.</h4>
                             <span class="cblock__price">$378.00</span>
@@ -186,7 +198,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="flex">
                 <!-- row 3 -->
                 <div class="cblock">
                     <div class="cblock__photo">
@@ -197,7 +209,7 @@
                         <!-- new -->
                         <img class="photo-new" src="images/content/new.png" alt="photo-new">
                     </div>
-                    <div class="cblock__info">
+                    <div class="flex cblock__info">
                         <div>
                             <h4 class="cblock__header">Lorem Ipsum is simply.</h4>
                             <span class="cblock__price">$500.00</span>
@@ -215,7 +227,7 @@
                         <!-- new -->
                         <!-- <img class="photo-new" src="images/content/new.png" alt="photo-new"> -->
                     </div>
-                    <div class="cblock__info">
+                    <div class="flex cblock__info">
                         <div>
                             <h4 class="cblock__header">Etiam egestas velit.</h4>
                             <s>$460</s>
@@ -234,7 +246,7 @@
                         <!-- new -->
                         <img class="photo-new" src="images/content/new.png" alt="photo-new">
                     </div>
-                    <div class="cblock__info">
+                    <div class="flex cblock__info">
                         <div>
                             <h4 class="cblock__header">Mauris viverra magna.</h4>
                             <span class="cblock__price">$370.00</span>
@@ -244,7 +256,7 @@
                 </div>
             </section>
             <h2 class="content__header">STAFF PICK</h2>
-            <section>
+            <section class="flex">
                 <div class="cblock">
                     <div class="cblock__photo">
                         <!-- product -->
@@ -254,7 +266,7 @@
                         <!-- new -->
                         <img class="photo-new" src="images/content/new.png" alt="photo-new">
                     </div>
-                    <div class="cblock__info">
+                    <div class="flex cblock__info">
                         <div>
                             <h4 class="cblock__header">Lorem Ipsum is simply.</h4>
                             <span class="cblock__price">$378.00</span>
@@ -272,7 +284,7 @@
                         <!-- new -->
                         <!-- <img class="photo-new" src="images/content/new.png" alt="photo-new"> -->
                     </div>
-                    <div class="cblock__info">
+                    <div class="flex cblock__info">
                         <div>
                             <h4 class="cblock__header">Mauris viverra magna.</h4>
                             <span class="cblock__price">$278.00</span>
@@ -290,7 +302,7 @@
                         <!-- new -->
                         <img class="photo-new" src="images/content/new.png" alt="photo-new">
                     </div>
-                    <div class="cblock__info">
+                    <div class="flex cblock__info">
                         <div>
                             <h4 class="cblock__header">Curabitur pretium dui.</h4>
                             <span class="cblock__price">$188.00</span>
@@ -300,7 +312,7 @@
                 </div>
             </section>
             <h2 class="content__header">NEW PRODUCTS</h2>
-            <section>
+            <section class="flex">
                 <div class="cblock">
                     <div class="cblock__photo">
                         <!-- product -->
@@ -310,7 +322,7 @@
                         <!-- new -->
                         <img class="photo-new" src="images/content/new.png" alt="photo-new">
                     </div>
-                    <div class="cblock__info">
+                    <div class="flex cblock__info">
                         <div>
                             <h4 class="cblock__header">Sed tempus tellus.</h4>
                             <span class="cblock__price">$90.00</span>
@@ -328,7 +340,7 @@
                         <!-- new -->
                         <img class="photo-new" src="images/content/new.png" alt="photo-new">
                     </div>
-                    <div class="cblock__info">
+                    <div class="flex cblock__info">
                         <div>
                             <h4 class="cblock__header">Nulla accumsan lect.</h4>
                             <span class="cblock__price">$60.00</span>
@@ -346,7 +358,7 @@
                         <!-- new -->
                         <!-- <img class="photo-new" src="images/content/new.png" alt="photo-new"> -->
                     </div>
-                    <div class="cblock__info">
+                    <div class="flex cblock__info">
                         <div>
                             <h4 class="cblock__header">Lorem Ipsum is simply.</h4>
                             <span class="cblock__price">$378.00</span>
@@ -358,7 +370,7 @@
         </div>
 
         <div class="sidebar">
-            <div>
+            <div class="sidebar__container">
                 <h2 class="content__header">FEATURED<br> GLASS</h2>
                 <div>
                     <div class="sidebar-slider">
@@ -368,52 +380,51 @@
                     </div>
                 </div>
             </div>
-            <hr>
-            <div>
+            <div class="sidebar__container">
                 <h2 class="content__header">NEWSLETTERS<br> SIGNUP</h2>
-                <p>Lorem ipsum dolor sit amen,<br> dolor imun ra adlip ulissys</p>
-                <form action="">
-                    <input type="text"><br>
-                    <button>Subscribe</button>
+                <p class="sidebar__content">Lorem ipsum dolor sit amen,<br> dolor imun ra adlip ulissys</p>
+                <form action="" class="form">
+                    <input type="text" class="form__input"><br>
+                    <button class="form__button">Subscribe</button>
                 </form>
             </div>
         </div>
     </div>
 
     <footer>
-        <section class="panel wrapper">
-            <div class="panel__order">
+        <section class="wrapper flex panel">
+            <div class="flex panel__item">
                 <img src="images/ui/car.png" alt="car">
-                <h4>FREE SHIPPING ON ORDERS OVER $100</h4>
+                <h4 class="panel__header">FREE SHIPPING ON ORDERS OVER $100</h4>
             </div>
-            <div class="panel__phone">
+            <div class="flex panel__item">
                 <img src="images/ui/phone.png" alt="phone">
-                <h4>CALL US! TOLL FREE- 409-8888-0099</h4>
+                <h4 class="panel__header">CALL US! TOLL FREE- 409-8888-0099</h4>
             </div>
         </section>
-        <section class="footer wrapper">
+        <section class="wrapper flex footer">
             <div class="fblock">
                 <div>
                     <h4 class="fblock__header">FACEBOOK</h4>
                     <span>20000 members</span><br>
                     <button>Like</button>
                 </div>
-                <hr>
+                <div class="fblock__line"></div>
                 <div>
-                    <div class="fblock__info">
+                    <div class="flex fblock__info">
                         <a href="#"><img src="images/social/person-01.jpg" alt="social1"></a>
                         <a href="#"><img src="images/social/person-02.jpg" alt="social2"></a>
                         <a href="#"><img src="images/social/person-03.jpg" alt="social3"></a>
                         <a href="#"><img src="images/social/person-04.jpg" alt="social4"></a>
                     </div>
-                    <div class="fblock__info">
+                    <div class="flex fblock__info">
                         <a href="#"><img src="images/social/person-05.jpg" alt="social5"></a>
                         <a href="#"><img src="images/social/person-06.jpg" alt="social6"></a>
                         <a href="#"><img src="images/social/person-07.jpg" alt="social7"></a>
                         <a href="#"><img src="images/social/person-08.jpg" alt="social8"></a>
                     </div>
                 </div>
-                <hr>
+                <div class="fblock__line"></div>
                 <div class="fblock__info">
                     <a href="#">facebook Social plugin</a>
                 </div>
@@ -422,15 +433,15 @@
             <div class="fblock">
                 <h4 class="fblock__header">FROM TWITTER</h4>
                 <div>
-                    <div class="fblock__info">
+                    <div class="flex fblock__info">
                         <div><img src="images/ui/twitter.png" alt="twitter icon"></div>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                        <p class="fblock__content">Lorem Ipsum is simply dummy text of the printing and typesetting
                             industry. Lorem Ipsum has been the industry's standard dummy text
                             ever since the</p>
                     </div>
-                    <div class="fblock__info">
+                    <div class="flex fblock__info">
                         <div><img src="images/ui/twitter.png" alt="twitter icon"></div>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                        <p class="fblock__content">Lorem Ipsum is simply dummy text of the printing and typesetting
                             industry. Lorem Ipsum has been the industry's standard dummy text
                             ever since the</p>
                     </div>
@@ -439,31 +450,31 @@
 
             <div class="fblock">
                 <h4 class="fblock__header">INFORMATION</h4>
-                <div class="fblock__info fblock__info_iblock">
-                    <ul>
-                        <li>Sed ultrices purus non.</li>
-                        <li>sodales sodales.</li>
-                        <li>Curabitur pretium dui vitae.</li>
-                        <li>Donec gravida mi in nisl </li>
-                        <li>faucibus leo condimentum.</li>
-                        <li>Donec et lorem suscipit.</li>
+                <div class="flex fblock__info">
+                    <ul class="list">
+                        <li class="list__item list__item_info">Sed ultrices purus non.</li>
+                        <li class="list__item list__item_info">sodales sodales.</li>
+                        <li class="list__item list__item_info">Curabitur pretium dui vitae.</li>
+                        <li class="list__item list__item_info">Donec gravida mi in nisl </li>
+                        <li class="list__item list__item_info">faucibus leo condimentum.</li>
+                        <li class="list__item list__item_info">Donec et lorem suscipit.</li>
                     </ul>
                 </div>
             </div>
 
             <div class="fblock">
                 <h4 class="fblock__header">CONTACTS</h4>
-                <div class="fblock__info fblock__info_iblock">
-                    <ul class="fblock__info_contacts">
-                        <li>Leo Store</li>
-                        <li>Leopards media</li>
-                        <li>KVM Rpad, 4590GH</li>
-                        <li>+1 489-8888-0099</li>
-                        <li>mail@email.com</li>
+                <div class="flex fblock__info">
+                    <ul class="list">
+                        <li class="list__item">Leo Store</li>
+                        <li class="list__item">Leopards media</li>
+                        <li class="list__item">KVM Rpad, 4590GH</li>
+                        <li class="list__item">+1 489-8888-0099</li>
+                        <li class="list__item">mail@email.com</li>
                     </ul>
                 </div>
-                <hr>
-                <div class="fblock__info">
+                <div class="fblock__line"></div>
+                <div class="flex fblock__info">
                     <a href="#"><img src="images/ui/g.png" alt="g"></a>
                     <a href="#"><img src="images/ui/in.png" alt="in"></a>
                     <a href="#"><img src="images/ui/rss.png" alt="rss"></a>
@@ -471,18 +482,23 @@
                 </div>
             </div>
         </section>
-        <section class="panel wrapper panel_footer">
-            <div class="panel__copyright">
-                © Copyright 2013 Css Author, All Rights Reserved.
+        <section class="panel panel_footer">
+            <div class="wrapper flex">
+                <div class="panel__copyright">
+                    &copy; Copyright 2013 Css Author, All Rights Reserved.
+                </div>
+                <div class="panel__menu">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#" class="menu__link menu__link_footer">About Us</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link menu__link_footer">Delivery & Returns</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link menu__link_footer">Terms & Conditions</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link menu__link_footer">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
-            <ul class="panel__menu panel__menu_footer">
-                <li><a href="#">About Us</a> | </li>
-                <li><a href="#">Delivery & Returns</a> | </li>
-                <li><a href="#">Terms & Conditions</a> | </li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
         </section>
     </footer>
+
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>

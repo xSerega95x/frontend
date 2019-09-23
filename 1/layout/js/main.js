@@ -6,8 +6,11 @@ $(".main-slider").slick({
 });
 
 $(".sidebar-slider").slick({
+  arrows: false,
   dots: true,
+  autoplay: true,
+  autoplaySpeed: 1500,
   infinite: true,
   slidesToShow: 1,
-  slidesToScroll: 1
+  slidesToScroll: 1,
 });
