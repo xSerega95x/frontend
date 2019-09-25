@@ -1,0 +1,91 @@
+.header {
+  background: $c-header-bg;
+  .navbar {
+    flex-wrap: wrap;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  .form {
+    padding: 4px;
+    background-color: $c-search-bg;
+    margin: 4rem;
+    &__input {
+      @include font($c-text-03, normal, 2.3rem, $font-main);
+      border: 0;
+      width: 32.8rem;
+    }
+    &__button {
+      @include font($c-text-01, normal, 2.3rem, $font-main);
+      background-color: $c-search-bg;
+      border: 0;
+    }
+  }
+  .backet {
+    border-right: 1px solid $c-text-02;
+    margin-right: 2rem;
+    &__container {
+      display: flex;
+      align-items: center;
+      padding-right: 1rem;
+    }
+    &__icon {
+      color: $c-search-bg;
+      font-size: 2.3rem;
+      padding-right: 1rem;
+    }
+    &__header {
+      @include font($c-text-02, normal, 2.3rem, $font-main);
+
+      span {
+        font-size: 1.3rem;
+      }
+    }
+    &__price {
+      @include font($c-text-02, bold, 2.7rem, $font-main);
+      margin: 6px;
+    }
+    &__button {
+      @include font($c-text-01, normal, 1.5rem, $font-main);
+      padding: 6px;
+      border-radius: 5px;
+      background-color: $c-text-08;
+      margin-left: 1.2rem;
+    }
+    &__button:hover {
+      text-decoration: none;
+    }
+  }
+  .wishlist {
+    position: relative;
+    min-width: 9rem;
+    min-height: 7rem;
+    &__icon {
+      background-color: $c-panel-bg;
+      color: $c-text-07;
+      font-size: 1.6rem;
+      padding: 0.5rem;
+      border-radius: 1.5rem;
+      position: absolute;
+      top: 20%;
+      left: 20%;
+    }
+    &__header {
+      @include font($c-text-02, normal, 2.1rem, $font-main);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    &__count {
+      @include font($c-text-01, normal, 1.3rem, $font-main);
+      background-color: $c-search-bg;
+      padding: 0 0.5rem;
+      border-radius: 1.5rem;
+      position: absolute;
+      bottom: 3rem;
+      right: 1rem;
+    }
+  }
+}

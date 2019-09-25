@@ -5,7 +5,7 @@
         justify-content: flex-end;
 
         &-link{
-            color: $c-text-1;
+            @include font($c-text-01, lighter, 1.9rem, $font-main); 
         }
     }
 }

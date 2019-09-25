@@ -8,6 +8,7 @@
     <title>Books online</title>
     <link rel="stylesheet" href="vendors/bootstrap/bootstrap-reboot.css">
     <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
 
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -32,21 +33,43 @@
         </div>
     </section>
     <header class="header">
-        <div class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <img src="img/ui/logo.jpg" alt="logo">
-            </a>
+        <div class="navbar navbar-expand-lg">
+            <div class="header__container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/ui/logo.jpg" alt="logo">
+                </a>
 
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-            <div>
-                backet
-                wishlist
+                <form class="form">
+                    <input class="form__input" type="search" placeholder="Search" aria-label="Search">
+                    <button class="form__button" type="submit">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        Search
+                    </button>
+                </form>
+            </div>
+
+            <div class="header__container">
+                <div class="backet">
+                    <div class="backet__container">
+                        <i class="fa fa-shopping-cart backet__icon" aria-hidden="true"></i>
+                        <h2 class="backet__header">Your cart <span>(2 items)</span></h2>
+                    </div>
+                    <div class="backet__container">
+                        <p class="backet__price">$125</p>
+                        <a href="#" class="backet__button">Checkout</a>
+                    </div>
+                </div>
+                <div class="wishlist">
+                    <i class="fas fa-star wishlist__icon"></i>
+                    <h2 class="wishlist__header">Wish list</h2>
+                    <span class="wishlist__count">20</span>
+                </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    </header>
+
+    <section class="section-menu">
+        <nav class="navbar navbar-expand-lg">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -84,7 +107,7 @@
                 </ul>
             </div>
         </nav>
-    </header>
+    </section>
 
     <section class="section-slider">
 
