@@ -33,84 +33,320 @@
         </div>
     </section>
     <header class="header">
-        <div class="navbar navbar-expand-lg">
-            <div class="header__container">
-                <a class="navbar-brand" href="#">
-                    <img src="img/ui/logo.jpg" alt="logo">
-                </a>
+        <div class="container">
+            <div class="navbar navbar-expand-lg">
+                <div class="header__container">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/ui/logo.jpg" alt="logo">
+                    </a>
 
-                <form class="form">
-                    <input class="form__input" type="search" placeholder="Search" aria-label="Search">
-                    <button class="form__button" type="submit">
-                        <i class="fa fa-search" aria-hidden="true"></i>
-                        Search
-                    </button>
-                </form>
-            </div>
-
-            <div class="header__container">
-                <div class="backet">
-                    <div class="backet__container">
-                        <i class="fa fa-shopping-cart backet__icon" aria-hidden="true"></i>
-                        <h2 class="backet__header">Your cart <span>(2 items)</span></h2>
-                    </div>
-                    <div class="backet__container">
-                        <p class="backet__price">$125</p>
-                        <a href="#" class="backet__button">Checkout</a>
-                    </div>
+                    <form class="form">
+                        <input class="form__input" type="search" placeholder="Search" aria-label="Search">
+                        <button class="form__button" type="submit">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            Search
+                        </button>
+                    </form>
                 </div>
-                <div class="wishlist">
-                    <i class="fas fa-star wishlist__icon"></i>
-                    <h2 class="wishlist__header">Wish list</h2>
-                    <span class="wishlist__count">20</span>
+
+                <div class="header__container">
+                    <div class="backet">
+                        <div class="backet__container">
+                            <i class="fa fa-shopping-cart backet__icon" aria-hidden="true"></i>
+                            <h2 class="backet__header">Your cart <span>(2 items)</span></h2>
+                        </div>
+                        <div class="backet__container">
+                            <p class="backet__price">$125</p>
+                            <a href="#" class="backet__button">Checkout</a>
+                        </div>
+                    </div>
+                    <div class="wishlist">
+                        <i class="fas fa-star wishlist__icon"></i>
+                        <h2 class="wishlist__header">Wish list</h2>
+                        <span class="wishlist__count">20</span>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
     <section class="section-menu">
-        <nav class="navbar navbar-expand-lg">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Computers</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Cooking</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Fiction</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Health</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Mathematics</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Medical</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Reference</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Science</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Computers</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cooking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fiction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Health</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mathematics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Medical</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reference</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Science</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </section>
 
     <section class="section-slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-9">
+                    <div id="carousel1" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/slider/slide01.jpg" class="d-block w-100" alt="slide01">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/slider/slide01.jpg" class="d-block w-100" alt="slide01">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 px-0">
+                    <div class="deal">
+                        <header class="deal__block">
+                            <h2 class="deal__header">Deal of the Month</h2>
+                            <h4 class="deal__subheader">The Human Face of Big Data</h4>
+                        </header>
+                        <div class="deal__block">
+                            <img src="img/discount/discount01.jpg" alt="discount01" class="deal__img">
+                            <img src="img/discount/bottom.png" alt="bottom">
+                        </div>
+                        <div class="deal__block">
+                            <div class="deal__discount">Save 45% Today</div>
+                            <div class="w-100"></div>
+                            <div class="deal__price">$27.50</div>
+                        </div>
+                        <div class="deal__block">
+                            <a href="#" class="button deal__button">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="section-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <nav class="menu">
+                        <header class="menu__header">Categories</header>
+                        <ul class="nav nav-pills flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">ALL</a>
+                            </li>
+                            <li class="menu__subheader">Fiction & Literature</li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Children</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Science Fiction</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Fantasy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Mystery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Romance</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Horror</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Poetry</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Literature</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Crime</a>
+                            </li>
+                            <li class="menu__subheader">Non - Fiction</li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Comic</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cook</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Psychology</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Medical</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Art</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Photography</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Law</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">History</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Business</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Computer</a>
+                            </li>
+                            <li class="menu__subheader">Other</li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Baby</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sex</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Travel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Science</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sports</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-9">
+                    <section class="content">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="bestsellers-tab" data-toggle="tab" href="#bestsellers"
+                                    role="tab" aria-controls="bestsellers" aria-selected="true">Best sellers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="newarrivals-tab" data-toggle="tab" href="#newarrivals"
+                                    role="tab" aria-controls="newarrivals" aria-selected="false">New Arrivals</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="usedbooks-tab" data-toggle="tab" href="#usedbooks" role="tab"
+                                    aria-controls="usedbooks" aria-selected="false">Used Books</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="specialoffers-tab" data-toggle="tab" href="#specialoffers"
+                                    role="tab" aria-controls="specialoffers" aria-selected="false">Special Offers</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="bestsellers" role="tabpanel"
+                                aria-labelledby="bestsellers-tab">
+                                bestsellers
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-discount">30%<span>Off</span></div>
+                                            <img src="img/content/the-hare-with-amber-eyes.jpg"
+                                                alt="the-hare-with-amber-eyes" class="card-img-top">
+                                            <div class="card-body">
+                                                <p class="card-text">The Hare With Amber Eyes</p>
+                                                <p class="card-price">$50</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                                <div class="card-discount">30%<span>Off</span></div>
+                                            <img src="img/content/the-war-of-art.jpg" alt="the-war-of-art"
+                                                class="card-img-top">
+                                            <div class="card-body">
+                                                <p class="card-text">The war of Art</p>
+                                                <p class="card-price">$60</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                                <div class="card-discount">30%<span>Off</span></div>
+                                            <img src="img/content/can-love-happen-twice.jpg" alt="can-love-happen-twice"
+                                                class="card-img-top">
+                                            <div class="card-body">
+                                                <p class="card-text">The Hare With Amber Eyes</p>
+                                                <p class="card-price">$25</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-discount">30%<span>Off</span></div>
+                                            <img src="img/content/meluha.jpg" alt="meluha" class="card-img-top">
+                                            <div class="card-body">
+                                                <p class="card-text">The Immortals of Meluha</p>
+                                                <p class="card-price">$80</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-discount">30%<span>Off</span></div>
+                                            <img src="img/content/life-is-what-you-make-it.jpg"
+                                                alt="life-is-what-you-make-it" class="card-img-top">
+                                            <div class="card-body">
+                                                <p class="card-text">Life Is What You Make It</p>
+                                                <p class="card-price">$200</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="newarrivals" role="tabpanel"
+                                aria-labelledby="newarrivals-tab">
+                                New Arrivals
+                            </div>
+                            <div class="tab-pane fade" id="usedbooks" role="tabpanel" aria-labelledby="usedbooks-tab">
+                                Used Books
+                            </div>
+                            <div class="tab-pane fade" id="specialoffers" role="tabpanel"
+                                aria-labelledby="specialoffers-tab">
+                                Special Offers
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="vendors/jquery/jquery-3.4.1.min.js"></script>

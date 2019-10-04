@@ -1,8 +1,8 @@
-html{ font-size: calc(10rem / 16); }
-
 @import "variables";
 @import "mixins";
+@import "common";
 @import "section-panel";
 @import "header";
 @import "section-menu";
 @import "section-slider";
+@import "section-content";

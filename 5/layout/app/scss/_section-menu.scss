@@ -1,6 +1,6 @@
 .section-menu {
-  border-top: 2px solid $c-text-09;
-  border-bottom: 2px solid $c-text-10;
+  border-top: 2px solid $color09;
+  border-bottom: 2px solid $color10;
   .navbar {
     padding: 0 1rem;
     &-nav {
@@ -12,10 +12,10 @@
     background-color: $c-content-bg;
   }
   .nav-link {
-    @include font($c-text-03, normal, 1.9rem, $font-main);
-  }
-  .nav-link:hover {
-    background: $c-menu-bg;
-    color: $c-text-01;
+    @include font($color03, normal, 1.9rem, $font-main);
+    &:hover {
+      background: $c-menu-bg;
+      color: $color01;
+    }
   }
 }

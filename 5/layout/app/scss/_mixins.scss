@@ -1,4 +1,26 @@
-@mixin font($color: $c-text-03, $weight: normal, $fsize: 1rem, $family: $font-main){
+@mixin font($color: $color03, $weight: normal, $fsize: 1rem, $family: $font-main){
     color: $color;
     font: $weight $fsize $family;
+}
+
+@mixin button($bg-color: $color12, $br: 0.7rem, $padding: 1rem 3rem, $border: true, $t-shadow: true){
+    background: $bg-color;
+    border-radius: $br;
+    padding: $padding;
+
+    @if $border == true {
+        border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    } @else if $border == false{
+        border: 0;
+    }
+
+    @if $t-shadow == true {
+        text-shadow: 1px 0.1rem 0 rgba(0, 0, 0, 0.5);
+    } @else if $t-shadow == false {
+        text-shadow: none;
+    }
+
+    &:hover{
+        text-decoration: none;
+    }
 }

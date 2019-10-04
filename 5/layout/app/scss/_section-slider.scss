@@ -1,0 +1,55 @@
+.section-slider{
+    .carousel{
+        &-control-prev{
+            justify-content: flex-start;
+        }
+        &-control-next{
+            justify-content: flex-end;
+        }
+        &-control-prev-icon{
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+        }
+        &-control-next-icon{
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+        }
+        &-control-prev-icon, &-control-next-icon{
+            padding: 2rem;
+            border-radius: 50%;
+            background-color: $color03;
+            background-size: 50% 50%;
+            margin: 0 1.2rem;
+        }
+    }
+    .deal{
+        background-color: $color11;
+        background: $bg-deal;
+        height: 100%;
+        padding-top: 1.2rem;
+        margin: 0 15px;
+        &__block{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &__header{
+            @include font($color: $color01, $weight: bold, $fsize: 2.7rem, $family: $font-main);
+        }
+        &__subheader{
+            @include font($color: $color01, $weight: lighter, $fsize: 1.5rem, $family: $font-main);
+            margin-bottom: 1.2rem;
+        }
+        &__img{
+            margin-bottom: -8px;
+            z-index: 1; 
+        }
+        &__discount{
+            @include font($color: $color01, $weight: normal, $fsize: 2.1rem, $family: $font-main);
+        }
+        &__price{
+            @include font($color: $color01, $weight: bold, $fsize: 2.9rem, $family: $font-main);
+        }
+        &__button{
+            margin-top: 1rem;
+        }
+    }
+}

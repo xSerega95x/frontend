@@ -1,0 +1,44 @@
+.section-content{
+    margin: 1.3rem 0;
+    .menu{
+        border: 1px solid $color16;
+        padding: 0 2.4rem;
+        &__header{
+            @include font($color13, lighter, 2.4rem);
+        }
+        &__subheader{
+            @include font($color14, bold, 1.7rem);
+            margin: 1.5rem 0 1.7rem 0;
+        }
+        .nav-link{
+            @include font($color05, normal, 1.5rem, $font-SUI);
+            border-bottom: 0.1rem solid $color15;
+            margin-top: 0.7rem;
+            &:hover, &.active{
+                background: $c-menu-bg;
+                color: $color01;
+                border: 0;
+            }
+        }
+    }
+    .content{
+        .nav-link{
+            @include font($color17, normal, 1.7rem, $font-HLT);
+            &.active{
+                @include font($color04, bold, 1.8rem, $font-HLT);
+            }
+        }
+        .card{
+            border: 0;
+            &-discount{
+
+                span{
+
+                }
+            }
+            &-price{
+
+            }
+        }
+    }
+}

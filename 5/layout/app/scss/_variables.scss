@@ -3,20 +3,29 @@ $c-search-bg: #79b260;
 $c-header-bg: linear-gradient(to top, #ebebeb, #ffffff);
 $c-menu-bg: linear-gradient(to top, #7ab361, #92d774);
 $c-content-bg: #ffffff;
+$bg-deal: radial-gradient(circle, rgba(180,180,180,1) 0%, rgba(184,184,184,1) 53%, rgba(88,88,88,1) 100%);
 
-$c-text-01: #ffffff;
-$c-text-02: #6d6d6d;
-$c-text-03: #5b5b5b;
-$c-text-04: #464646;
-$c-text-05: #595959;
-$c-text-06: #f05356;
-$c-text-07: #dddddd;
-$c-text-08: #3a3a3a;
-$c-text-09: #cecece;
-$c-text-10: #dedede;
+$color01: #ffffff;
+$color02: #6d6d6d;
+$color03: #5b5b5b;
+$color04: #464646;
+$color05: #595959;
+$color06: #f05356;
+$color07: #dddddd;
+$color08: #3a3a3a;
+$color09: #cecece;
+$color10: #dedede;
+$color11: #c9c9c9;
+$color12: linear-gradient(to bottom, #61c161, #52a552);
+$color13: #6b6b6b;
+$color14: #696969;
+$color15: #e6e7e8;
+$color16: #d6d6d6;
+$color17: #6b6969;
 
 $font-main: 'Segoe WP', sans-serif, arial;
-$font-price: 'Helvetica LT Std', Tahoma, sans-serif;
+$font-SUI: 'Segoe UI', Tahoma, sans-serif;
+$font-HLT: 'Helvetica LT Std', Tahoma, sans-serif;
 
 @font-face{
     font-family: 'Segoe WP'; src: url('../fonts/Segoe-WP-Regular.ttf');
@@ -37,4 +46,9 @@ $font-price: 'Helvetica LT Std', Tahoma, sans-serif;
 @font-face{
     font-family: 'Helvetica LT Std'; src: url('../fonts/Helvetica-LTStd-Roman.otf');
     font-style: normal; font-weight: normal;
+}
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../fonts/SegoeUI.ttf') format('truetype');
+    font-weight: normal;font-style: normal;
 }
