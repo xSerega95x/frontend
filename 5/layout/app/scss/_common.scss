@@ -4,3 +4,10 @@ html{ font-size: calc(10rem / 16); }
     @include button();
     @include font($color01, bold, 1.9rem);
 }
+
+a{
+    &:hover{
+        text-decoration: none;
+        cursor: pointer;
+    }
+}

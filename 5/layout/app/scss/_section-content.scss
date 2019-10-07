@@ -22,22 +22,78 @@
         }
     }
     .content{
-        .nav-link{
-            @include font($color17, normal, 1.7rem, $font-HLT);
-            &.active{
-                @include font($color04, bold, 1.8rem, $font-HLT);
-            }
-        }
-        .card{
-            border: 0;
-            &-discount{
-
-                span{
-
+        /* tabs */
+        .nav{
+            &-link{
+                @include font($color17, normal, 1.7rem, $font-HLT);
+                &.active{
+                    @include font($color04, bold, 1.8rem, $font-HLT);
                 }
             }
-            &-price{
-
+        }
+        .tab-content{
+            padding: 2.4rem 2.4rem 0 2.4rem;
+            border: 1px solid $color16;
+            border-top: 0;
+        }
+        /* books */
+        .card{
+            border: 0;
+            height: 100%;
+            &-discount{
+                background-color: $color06;
+                padding: 0.8rem 0.5rem 0.5rem 0.9rem;
+                border-radius: 50%;
+                position: absolute;
+                top: -20px;
+                right: -20px;
+                text-align: center;
+                p{
+                    @include font($color01, bold, 1.9rem, $font-main);
+                    margin-bottom: 0;
+                }
+                span{
+                    @include font($color01, normal, 1.3rem, $font-main);
+                    line-height: 0;
+                }
+            }
+            &-img-top{
+                padding: 0.5rem;
+                border-radius: 4px;
+                box-shadow: 0 0 5px $color02;
+            }
+            &-body{
+                display: flex;
+                justify-content: center;
+                
+                .card-text{
+                    @include font($color18, lighter, 1.5rem, $font-main);
+                }
+                .card-price{
+                    @include font($color06, normal, 2.1rem, $font-HLT);
+                    align-self: flex-end;
+                }
+                &:nth-child(3){
+                    padding-bottom: 0;
+                }
+                &:nth-child(4){
+                    padding-top: 0.5rem;
+                }
+            }
+        }
+        /* pagination */
+        .page{
+            &-item{
+                margin-right: 0.7rem;
+                &.active{
+                    border: 1px solid $color15;
+                    border-bottom: 0.4rem solid $c-search-bg;
+                } 
+            }
+            &-link{
+                @include font($color18, normal, 1.5rem, $font-HLT);
+                border: 0;
+                background: none;
             }
         }
     }
