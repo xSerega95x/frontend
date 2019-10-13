@@ -36,7 +36,13 @@
         <div class="container">
             <div class="navbar navbar-expand-lg">
                 <div class="header__container">
-                    <a class="navbar-brand" href="#">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+                    <a class="pl-3 navbar-brand" href="#">
                         <img src="img/ui/logo.jpg" alt="logo">
                     </a>
 
@@ -73,12 +79,6 @@
     <section class="section-menu">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
@@ -117,7 +117,7 @@
     <section class="section-slider">
         <div class="container">
             <div class="row">
-                <div class="col-9">
+                <div class="col-12 col-lg-9">
                     <div id="carousel1" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -137,15 +137,17 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-3 px-0">
+                <div class="col-lg-3 px-0">
                     <div class="deal">
                         <header class="deal__block">
                             <h2 class="deal__header">Deal of the Month</h2>
                             <h4 class="deal__subheader">The Human Face of Big Data</h4>
                         </header>
                         <div class="deal__block">
-                            <img src="img/discount/discount01.jpg" alt="discount01" class="deal__img">
-                            <img src="img/discount/bottom.png" alt="bottom">
+                            <div class="deal__img">
+                                <img src="img/discount/discount01.jpg" alt="discount01" class="img-fluid">
+                                <img src="img/discount/bottom.png" alt="bottom" class="img-fluid">
+                            </div>
                         </div>
                         <div class="deal__block">
                             <div class="deal__discount">Save 45% Today</div>
@@ -171,14 +173,13 @@
                             <li class="nav-item">
                                 <a class="nav-link active" href="#">ALL</a>
                             </li>
-                            <li class="menu__subheader">Fiction & Literature</li>
+                            <li class="nav-item menu__subheader">Fiction & Literature</li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Children</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Science Fiction</a>
                             </li>
-
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Fantasy</a>
                             </li>
@@ -200,7 +201,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Crime</a>
                             </li>
-                            <li class="menu__subheader">Non - Fiction</li>
+                            <li class="nav-item menu__subheader">Non - Fiction</li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Comic</a>
                             </li>
@@ -231,7 +232,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Computer</a>
                             </li>
-                            <li class="menu__subheader">Other</li>
+                            <li class="nav-item menu__subheader">Other</li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Baby</a>
                             </li>
@@ -274,7 +275,7 @@
                             <div class="tab-pane fade show active" id="bestsellers" role="tabpanel"
                                 aria-labelledby="bestsellers-tab">
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col-6 col-sm-4 col-md-3 col-lg-auto">
                                         <a href="#">
                                             <div class="card">
                                                 <div class="card-discount">
@@ -291,7 +292,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-6 col-sm-4 col-md-3 col-lg-auto">
                                         <a href="#">
                                             <div class="card">
                                                 <div class="card-discount d-none">
@@ -308,7 +309,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-6 col-sm-4 col-md-3 col-lg-auto">
                                         <a href="#">
                                             <div class="card">
                                                 <div class="card-discount">
@@ -325,7 +326,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-6 col-sm-4 col-md-3 col-lg-auto">
                                         <a href="#">
                                             <div class="card">
                                                 <div class="card-discount d-none">
@@ -341,7 +342,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-6 col-sm-4 col-md-3 col-lg-auto">
                                         <a href="#">
                                             <div class="card">
                                                 <div class="card-discount d-none">
@@ -358,10 +359,8 @@
                                             </div>
                                         </a>
                                     </div>
-                                </div>
 
-                                <div class="row">
-                                    <div class="col">
+                                    <div class="col-6 col-sm-4 col-md-3 col-lg-auto">
                                         <a href="#">
                                             <div class="card">
                                                 <div class="card-discount d-none">
@@ -378,7 +377,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-6 col-sm-4 col-md-3 col-lg-auto">
                                         <a href="#">
                                             <div class="card">
                                                 <div class="card-discount d-none">
@@ -395,7 +394,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-6 col-sm-4 col-md-3 col-lg-auto">
                                         <a href="#">
                                             <div class="card">
                                                 <div class="card-discount">
@@ -412,7 +411,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-6 col-sm-4 col-md-3 col-lg-auto">
                                         <a href="#">
                                             <div class="card">
                                                 <div class="card-discount d-none">
@@ -429,7 +428,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-6 col-sm-4 col-md-3 col-lg-auto">
                                         <a href="#">
                                             <div class="card">
                                                 <div class="card-discount d-none">
@@ -446,10 +445,8 @@
                                             </div>
                                         </a>
                                     </div>
-                                </div>
 
-                                <div class="row">
-                                    <div class="col">
+                                    <div class="col-6 col-sm-4 col-md-3 col-lg-auto">
                                         <a href="#">
                                             <div class="card">
                                                 <div class="card-discount d-none">
@@ -466,7 +463,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-6 col-sm-4 col-md-3 col-lg-auto">
                                         <a href="#">
                                             <div class="card">
                                                 <div class="card-discount d-none">
@@ -483,7 +480,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-6 col-sm-4 col-md-3 col-lg-auto">
                                         <a href="#">
                                             <div class="card">
                                                 <div class="card-discount d-none">
@@ -500,7 +497,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-6 col-sm-4 col-md-3 col-lg-auto">
                                         <a href="#">
                                             <div class="card">
                                                 <div class="card-discount">
@@ -517,7 +514,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-6 col-sm-4 col-md-3 col-lg-auto">
                                         <a href="#">
                                             <div class="card">
                                                 <div class="card-discount d-none">
@@ -549,14 +546,27 @@
                             </div>
                             <div class="tab-pane fade" id="newarrivals" role="tabpanel"
                                 aria-labelledby="newarrivals-tab">
-                                New Arrivals
+                                <div class="row">
+                                    <div class="col">
+                                        <h4>New Arrivals</h4>
+                                    </div>
+                                </div>
                             </div>
+
                             <div class="tab-pane fade" id="usedbooks" role="tabpanel" aria-labelledby="usedbooks-tab">
-                                Used Books
+                                <div class="row">
+                                    <div class="col">
+                                        <h4>Used Books</h4>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="specialoffers" role="tabpanel"
                                 aria-labelledby="specialoffers-tab">
-                                Special Offers
+                                <div class="row">
+                                    <div class="col">
+                                        <h4>Special Offers</h4>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -569,7 +579,7 @@
         <section class="footer__menu">
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-6 col-sm-3">
                         <header>Biography & True Stories</header>
                         <ul class="nav flex-column">
                             <li class="nav-item">
@@ -607,7 +617,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col">
+                    <div class="col-6 col-sm-3">
                         <header>Professional & Reference</header>
                         <ul class="nav flex-column">
                             <li class="nav-item">
@@ -645,7 +655,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col">
+                    <div class="col-6 col-sm-3">
                         <header>Earth Sciences</header>
                         <ul class="nav flex-column">
                             <li class="nav-item">
@@ -692,7 +702,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col">
+                    <div class="col-6 col-sm-3">
                         <header>Mathematics</header>
                         <ul class="nav flex-column">
                             <li class="nav-item">
@@ -738,12 +748,17 @@
         </section>
         <section class="footer__cards">
             <div class="container">
-                <div>We accept all major Credit Card/Debit Card/Internet Banking</div>
+                <header>We accept all major Credit Card/Debit Card/Internet Banking</header>
+                <div class="cards">
+                    <img src="img/ui/mastercard.jpg" alt="mastercard">
+                    <img src="img/ui/americanexpress.jpg" alt="americanexpress">
+                    <img src="img/ui/visa.jpg" alt="visa">
+                </div>
             </div>
         </section>
         <section class="footer__copyrights">
             <div class="container">
-
+                <header> Conditions of Use Privacy Notice &copy; 2012-2013, Booksonline, Inc. or its affiliates</header>
             </div>
         </section>
     </footer>

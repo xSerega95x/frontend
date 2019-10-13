@@ -1,3 +1,37 @@
 .footer{
-    background-color: silver;
+    background: url('../img/ui/footer-bg.jpg') repeat repeat;
+    padding-top: 2rem;
+    header{
+        @include font($color07, normal, 1.9rem, $font-main); 
+    }
+    .nav{
+        padding: 2rem 0;
+        &-item{
+            border-bottom: 1px solid rgba(255, 255, 255, .1);
+            &:last-child{
+                border-bottom: 0;
+            }
+        }
+        &-link{
+            @include font($color07, normal, 1.3rem, $font-main);
+            padding: 0.5rem 0;
+        }
+    }
+    &__cards, &__copyrights{
+        background-color: rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    &__cards{
+        padding-top: 2rem;
+        .cards{
+            padding: 1rem 0;
+            img{
+                margin-right: 0.5rem;
+            }
+        }
+    }
+    &__copyrights{
+        border-top: 1px solid rgba(255, 255, 255, .1);
+        padding: 2rem 0;
+    }
 }

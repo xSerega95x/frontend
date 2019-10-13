@@ -6,6 +6,9 @@
 
         &-link{
             @include font($color01, lighter, 1.9rem, $font-main); 
+            &:hover{
+                color: $color16;
+            }
         }
     }
 }

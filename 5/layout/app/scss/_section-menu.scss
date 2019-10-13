@@ -2,7 +2,7 @@
   border-top: 2px solid $color09;
   border-bottom: 2px solid $color10;
   .navbar {
-    padding: 0 1rem;
+    padding: 0.2rem 1rem;
     &-nav {
       flex-wrap: wrap;
     }
@@ -18,4 +18,8 @@
       color: $color01;
     }
   }
+}
+
+.navbar-toggler{
+  font-size: 4rem;;
 }

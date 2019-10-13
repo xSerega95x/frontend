@@ -1,4 +1,5 @@
 .section-slider{
+    padding-top: 1.3rem;
     .carousel{
         &-control-prev{
             justify-content: flex-start;
@@ -32,21 +33,29 @@
             flex-wrap: wrap;
         }
         &__header{
-            @include font($color: $color01, $weight: bold, $fsize: 2.7rem, $family: $font-main);
+            @include font($color: $color01, $weight: bold, $fsize: 2.4rem, $family: $font-main);
         }
         &__subheader{
             @include font($color: $color01, $weight: lighter, $fsize: 1.5rem, $family: $font-main);
             margin-bottom: 1.2rem;
         }
         &__img{
-            margin-bottom: -8px;
-            z-index: 1; 
+            width: 55%;
+            margin: auto;
+            text-align: center;
+            img:first-child{
+                width: 50%;
+                margin-bottom: -8px;
+                /*p:r; special for z-index*/
+                position: relative;
+                z-index: 1;
+            }
         }
         &__discount{
-            @include font($color: $color01, $weight: normal, $fsize: 2.1rem, $family: $font-main);
+            @include font($color: $color01, $weight: normal, $fsize: 1.84vw, $family: $font-main);
         }
         &__price{
-            @include font($color: $color01, $weight: bold, $fsize: 2.9rem, $family: $font-main);
+            @include font($color: $color01, $weight: bold, $fsize: 2.5vw, $family: $font-main);
         }
         &__button{
             margin-top: 1rem;

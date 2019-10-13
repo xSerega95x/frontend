@@ -24,8 +24,17 @@
     .content{
         /* tabs */
         .nav{
+            &-item{
+                margin-left: -1px;
+                &:first-child{
+                    margin-left: 0px;
+                }
+            }
             &-link{
                 @include font($color17, normal, 1.7rem, $font-HLT);
+                padding: 1.2rem;
+                border: 1px solid $color16;
+                border-bottom: 0;
                 &.active{
                     @include font($color04, bold, 1.8rem, $font-HLT);
                 }
