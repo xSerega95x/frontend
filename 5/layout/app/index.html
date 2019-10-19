@@ -18,18 +18,195 @@
         <div class="container">
             <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Sign in</a>
+                    <a class="nav-link active" href="#sign" data-toggle="modal" data-target="#sign">Sign in</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">My Account</a>
+                    <a class="nav-link" href="#myaccount" data-toggle="modal" data-target="#myaccount">My Account</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Order Status</a>
+                    <a class="nav-link" href="#orderstatus" data-toggle="modal" data-target="#orderstatus">Order
+                        Status</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Help</a>
                 </li>
             </ul>
+            <!-- Sign In & Registration -->
+            <div class="modal fade" id="sign" tabindex="-1" role="dialog" aria-labelledby="signLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- tabs -->
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="pills-signin-tab" data-toggle="pill"
+                                        href="#pills-signin" role="tab" aria-controls="pills-signin"
+                                        aria-selected="true">Sign In</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-reg-tab" data-toggle="pill" href="#pills-reg"
+                                        role="tab" aria-controls="pills-reg" aria-selected="false">Registration</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-signin" role="tabpanel"
+                                    aria-labelledby="pills-signin-tab">
+
+                                    <form action="" method="post" class="px-5 form form-user">
+                                        <div class="form-group">
+                                            <label for="singin-login">Login</label>
+                                            <input type="text" class="form-control" id="singin-login"
+                                                placeholder="Enter login" name="signin-login">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="singin-password">Password</label>
+                                            <input type="password" class="form-control" id="singin-password"
+                                                placeholder="Password" name="signin-password">
+                                        </div>
+                                        <div class="error">Wrong login or password</div>
+                                        <button type="submit" class="button form-btn">Sing In</button>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="pills-reg" role="tabpanel"
+                                    aria-labelledby="pills-reg-tab">
+
+                                    <form action="" method="post" class="px-5 form form-user">
+                                        <div class="form-group">
+                                            <label for="reg-name">Name</label>
+                                            <input type="text" class="form-control" id="reg-name"
+                                                placeholder="Enter your name" name="reg-name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="reg-surname">Surname</label>
+                                            <input type="text" class="form-control" id="reg-surname"
+                                                placeholder="Enter your surname" name="reg-surname">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="reg-adress">Adress</label>
+                                            <input type="text" class="form-control" id="reg-adress"
+                                                placeholder="Enter Adress" name="reg-adress">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="reg-adress">Phone</label>
+                                            <input type="text" class="form-control" id="reg-phone"
+                                                placeholder="Enter phone" name="reg-phone">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="reg-login">Login</label>
+                                            <input type="text" class="form-control" id="reg-login"
+                                                placeholder="Enter login" name="reg-login">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="reg-password">Password</label>
+                                            <input type="password" class="form-control" id="reg-password"
+                                                placeholder="Password" name="reg-password">
+                                        </div>
+                                        <div class="error">Incorrect login and password</div>
+                                        <button type="submit" class="button form-btn">Registration</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- SignIn & Registration -->
+
+            <!-- My account -->
+            <div class="modal fade" id="myaccount" tabindex="-1" role="dialog" aria-labelledby="myaccountLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="px-5 modal-title" id="myaccountLabel">My account</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <form action="post" class="px-5 form form-user">
+                                <div class="form-group">
+                                    <label for="myaccount-name">Name</label>
+                                    <input type="text" class="form-control" id="myaccount-name" placeholder="your name"
+                                        name="myaccount-name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="reg-surname">Surname</label>
+                                    <input type="text" class="form-control" id="myaccount-surname"
+                                        placeholder="your surname" name="reg-surname">
+                                </div>
+                                <div class="form-group">
+                                    <label for="myaccount-adress">Adress</label>
+                                    <input type="text" class="form-control" id="myaccount-adress" placeholder="Adress"
+                                        name="myaccount-adress">
+                                </div>
+                                <div class="form-group">
+                                    <label for="myaccount-adress">Phone</label>
+                                    <input type="text" class="form-control" id="myaccount-phone" placeholder="phone"
+                                        name="myaccount-phone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="myaccount-login">Login</label>
+                                    <input type="text" class="form-control" id="myaccount-login" placeholder="login"
+                                        name="myaccount-login">
+                                </div>
+                                <div class="form-group">
+                                    <label for="myaccount-password">Password</label>
+                                    <input type="password" class="form-control" id="myaccount-password"
+                                        placeholder="Password" name="myaccount-password">
+                                </div>
+                                <div class="error">Wrong login or password</div>
+                                <button type="submit" class="button form-btn">Update</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- My account -->
+
+            <!-- Order status -->
+            <div class="modal fade" id="orderstatus" tabindex="-1" role="dialog" aria-labelledby="orderstatusLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="px-5 modal-title" id="orderstatusLabel">Order status</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="px-5 modal-body">
+
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Order</th>
+                                        <th scope="col">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>The Hare With Amber Eyes</td>
+                                        <td>Order is accepted</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Calico Joe</td>
+                                        <td>Order is accepted</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Order status -->
         </div>
     </section>
     <header class="header">
@@ -46,8 +223,8 @@
                         <img src="img/ui/logo.jpg" alt="logo">
                     </a>
 
-                    <form class="form">
-                        <input class="form__input" type="search" placeholder="Search" aria-label="Search">
+                    <form action="" method="get" class="form">
+                        <input class="form__input" type="search" placeholder="Search" aria-label="Search" name="search">
                         <button class="form__button" type="submit">
                             <i class="fa fa-search" aria-hidden="true"></i>
                             Search
@@ -67,9 +244,11 @@
                         </div>
                     </div>
                     <div class="wishlist">
-                        <i class="fas fa-star wishlist__icon"></i>
-                        <h2 class="wishlist__header">Wish list</h2>
-                        <span class="wishlist__count">20</span>
+                        <a href="#">
+                            <i class="fas fa-star wishlist__icon"></i>
+                            <h2 class="wishlist__header">Wish list</h2>
+                            <span class="wishlist__count">20</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -281,7 +460,7 @@
                                                 <div class="card-discount">
                                                     <p>30%</p><span>Off</span>
                                                 </div>
-                                                <img src="img/content/the-hare-with-amber-eyes.jpg"
+                                                <img src="img/content/preview/the-hare-with-amber-eyes.jpg"
                                                     alt="the-hare-with-amber-eyes" class="card-img-top">
                                                 <div class="card-body">
                                                     <p class="card-text">The Hare With Amber Eyes</p>
@@ -298,7 +477,7 @@
                                                 <div class="card-discount d-none">
                                                     <p>30%</p><span>Off</span>
                                                 </div>
-                                                <img src="img/content/the-war-of-art.jpg" alt="the-war-of-art"
+                                                <img src="img/content/preview/the-war-of-art.jpg" alt="the-war-of-art"
                                                     class="card-img-top">
                                                 <div class="card-body">
                                                     <p class="card-text">The war of Art</p>
@@ -315,7 +494,7 @@
                                                 <div class="card-discount">
                                                     <p>30%</p><span>Off</span>
                                                 </div>
-                                                <img src="img/content/can-love-happen-twice.jpg"
+                                                <img src="img/content/preview/can-love-happen-twice.jpg"
                                                     alt="can-love-happen-twice" class="card-img-top">
                                                 <div class="card-body">
                                                     <p class="card-text">The Hare With Amber Eyes</p>
@@ -332,7 +511,8 @@
                                                 <div class="card-discount d-none">
                                                     <p>30%</p><span>Off</span>
                                                 </div>
-                                                <img src="img/content/meluha.jpg" alt="meluha" class="card-img-top">
+                                                <img src="img/content/preview/meluha.jpg" alt="meluha"
+                                                    class="card-img-top">
                                                 <div class="card-body">
                                                     <p class="card-text">The Immortals of Meluha</p>
                                                 </div>
@@ -348,7 +528,7 @@
                                                 <div class="card-discount d-none">
                                                     <p>30%</p><span>Off</span>
                                                 </div>
-                                                <img src="img/content/life-is-what-you-make-it.jpg"
+                                                <img src="img/content/preview/life-is-what-you-make-it.jpg"
                                                     alt="life-is-what-you-make-it" class="card-img-top">
                                                 <div class="card-body">
                                                     <p class="card-text">Life Is What You Make It</p>
@@ -366,7 +546,7 @@
                                                 <div class="card-discount d-none">
                                                     <p>30%</p><span>Off</span>
                                                 </div>
-                                                <img src="img/content/marathon-baba.jpg" alt="marathon-baba"
+                                                <img src="img/content/preview/marathon-baba.jpg" alt="marathon-baba"
                                                     class="card-img-top">
                                                 <div class="card-body">
                                                     <p class="card-text">The Hare With Amber Eyes</p>
@@ -383,7 +563,7 @@
                                                 <div class="card-discount d-none">
                                                     <p>30%</p><span>Off</span>
                                                 </div>
-                                                <img src="img/content/calico-joe.jpg" alt="calico-joe"
+                                                <img src="img/content/preview/calico-joe.jpg" alt="calico-joe"
                                                     class="card-img-top">
                                                 <div class="card-body">
                                                     <p class="card-text">The war of Art</p>
@@ -400,7 +580,7 @@
                                                 <div class="card-discount">
                                                     <p>30%</p><span>Off</span>
                                                 </div>
-                                                <img src="img/content/the-long-dark.jpg" alt="the-long-dark"
+                                                <img src="img/content/preview/the-long-dark.jpg" alt="the-long-dark"
                                                     class="card-img-top">
                                                 <div class="card-body">
                                                     <p class="card-text">The Hare With Amber Eyes</p>
@@ -417,8 +597,8 @@
                                                 <div class="card-discount d-none">
                                                     <p>30%</p><span>Off</span>
                                                 </div>
-                                                <img src="img/content/the-armageddon-rag.jpg" alt="the-armageddon-rag"
-                                                    class="card-img-top">
+                                                <img src="img/content/preview/the-armageddon-rag.jpg"
+                                                    alt="the-armageddon-rag" class="card-img-top">
                                                 <div class="card-body">
                                                     <p class="card-text">The Immortals of Meluha</p>
                                                 </div>
@@ -434,7 +614,7 @@
                                                 <div class="card-discount d-none">
                                                     <p>30%</p><span>Off</span>
                                                 </div>
-                                                <img src="img/content/a-walk-across-the-sun.jpg"
+                                                <img src="img/content/preview/a-walk-across-the-sun.jpg"
                                                     alt="a-walk-across-the-sun" class="card-img-top">
                                                 <div class="card-body">
                                                     <p class="card-text">Life Is What You Make It</p>
@@ -452,7 +632,7 @@
                                                 <div class="card-discount d-none">
                                                     <p>30%</p><span>Off</span>
                                                 </div>
-                                                <img src="img/content/the-sins-of-the-father.jpg"
+                                                <img src="img/content/preview/the-sins-of-the-father.jpg"
                                                     alt="the-sins-of-the-father" class="card-img-top">
                                                 <div class="card-body">
                                                     <p class="card-text">The Hare With Amber Eyes</p>
@@ -469,7 +649,7 @@
                                                 <div class="card-discount d-none">
                                                     <p>30%</p><span>Off</span>
                                                 </div>
-                                                <img src="img/content/the-magic.jpg" alt="the-magic"
+                                                <img src="img/content/preview/the-magic.jpg" alt="the-magic"
                                                     class="card-img-top">
                                                 <div class="card-body">
                                                     <p class="card-text">The war of Art</p>
@@ -486,7 +666,7 @@
                                                 <div class="card-discount d-none">
                                                     <p>30%</p><span>Off</span>
                                                 </div>
-                                                <img src="img/content/urban-shots.jpg" alt="urban-shots"
+                                                <img src="img/content/preview/urban-shots.jpg" alt="urban-shots"
                                                     class="card-img-top">
                                                 <div class="card-body">
                                                     <p class="card-text">The Hare With Amber Eyes</p>
@@ -503,7 +683,7 @@
                                                 <div class="card-discount">
                                                     <p>30%</p><span>Off</span>
                                                 </div>
-                                                <img src="img/content/calico-joe.jpg" alt="calico-joe"
+                                                <img src="img/content/preview/calico-joe.jpg" alt="calico-joe"
                                                     class="card-img-top">
                                                 <div class="card-body">
                                                     <p class="card-text">The Immortals of Meluha</p>
@@ -520,7 +700,7 @@
                                                 <div class="card-discount d-none">
                                                     <p>30%</p><span>Off</span>
                                                 </div>
-                                                <img src="img/content/i-never-knew-it-was-you.jpg"
+                                                <img src="img/content/preview/i-never-knew-it-was-you.jpg"
                                                     alt="i-never-knew-it-was-you" class="card-img-top">
                                                 <div class="card-body">
                                                     <p class="card-text">Life Is What You Make It</p>

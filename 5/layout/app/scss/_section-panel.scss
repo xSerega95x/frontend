@@ -11,4 +11,34 @@
             }
         }
     }
+    .modal{
+        &-header{
+            border: 0;
+        }
+        &-title{
+            @include font($color04, normal, 2.1rem, $font-main);
+            margin: auto;
+        }
+        &-body{
+            .nav{
+                justify-content: center;
+                &-link{
+                    @include font($color04, normal, 2.1rem, $font-main);
+                    &.active{
+                        color: $color01;
+                        background: $c-menu-bg;
+                    }
+                }
+            }
+        }
+        .error{
+            @include font($color06, bold, 1.7rem, $font-main);
+        }
+        .table{
+            @include font($color04, normal, 1.9rem, $font-main);
+            td{
+                @include font($color04, normal, 1.7rem, $font-main);
+            }
+        }
+    }
 }

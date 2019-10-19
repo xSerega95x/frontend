@@ -11,3 +11,16 @@ a{
         cursor: pointer;
     }
 }
+
+.form{
+    @include font($color04, normal, 1.7rem, $font-main);
+    input{
+        @include font($color13, bold, 1.4rem, $font-main);
+    }
+    &-btn{
+        @include font($color01, normal, 1.7rem, $font-main);
+        padding: .5rem .8rem;
+        display: block;
+        margin-left: auto;   
+    }
+}
