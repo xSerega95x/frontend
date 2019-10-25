@@ -62,12 +62,12 @@
                                         <div class="form-group">
                                             <label for="singin-login">Login</label>
                                             <input type="text" class="form-control" id="singin-login"
-                                                placeholder="Enter login" name="signin-login">
+                                                placeholder="Enter login" name="signin-login" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="singin-password">Password</label>
                                             <input type="password" class="form-control" id="singin-password"
-                                                placeholder="Password" name="signin-password">
+                                                placeholder="Password" name="signin-password" required>
                                         </div>
                                         <div class="error">Wrong login or password</div>
                                         <button type="submit" class="button form-btn">Sing In</button>
@@ -80,32 +80,32 @@
                                         <div class="form-group">
                                             <label for="reg-name">Name</label>
                                             <input type="text" class="form-control" id="reg-name"
-                                                placeholder="Enter your name" name="reg-name">
+                                                placeholder="Enter your name" name="reg-name" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="reg-surname">Surname</label>
                                             <input type="text" class="form-control" id="reg-surname"
-                                                placeholder="Enter your surname" name="reg-surname">
+                                                placeholder="Enter your surname" name="reg-surname" required>
                                         </div>
                                         <div class="form-group">
-                                            <label for="reg-adress">Adress</label>
-                                            <input type="text" class="form-control" id="reg-adress"
-                                                placeholder="Enter Adress" name="reg-adress">
+                                            <label for="reg-address">Address</label>
+                                            <input type="text" class="form-control" id="reg-address"
+                                                placeholder="Enter Address" name="reg-address" required>
                                         </div>
                                         <div class="form-group">
-                                            <label for="reg-adress">Phone</label>
+                                            <label for="reg-phone">Phone</label>
                                             <input type="text" class="form-control" id="reg-phone"
-                                                placeholder="Enter phone" name="reg-phone">
+                                                placeholder="Enter phone" name="reg-phone" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="reg-login">Login</label>
                                             <input type="text" class="form-control" id="reg-login"
-                                                placeholder="Enter login" name="reg-login">
+                                                placeholder="Enter login" name="reg-login" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="reg-password">Password</label>
                                             <input type="password" class="form-control" id="reg-password"
-                                                placeholder="Password" name="reg-password">
+                                                placeholder="Password" name="reg-password" required>
                                         </div>
                                         <div class="error">Incorrect login and password</div>
                                         <button type="submit" class="button form-btn">Registration</button>
@@ -130,36 +130,36 @@
                         </div>
                         <div class="modal-body">
 
-                            <form action="post" class="px-5 form form-user">
+                            <form action="" method="post" class="px-5 form form-user">
                                 <div class="form-group">
                                     <label for="myaccount-name">Name</label>
                                     <input type="text" class="form-control" id="myaccount-name" placeholder="your name"
-                                        name="myaccount-name">
+                                        name="myaccount-name" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="reg-surname">Surname</label>
                                     <input type="text" class="form-control" id="myaccount-surname"
-                                        placeholder="your surname" name="reg-surname">
+                                        placeholder="your surname" name="myaccount-surname" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="myaccount-adress">Adress</label>
-                                    <input type="text" class="form-control" id="myaccount-adress" placeholder="Adress"
-                                        name="myaccount-adress">
+                                    <label for="myaccount-address">Address</label>
+                                    <input type="text" class="form-control" id="myaccount-address" placeholder="Address"
+                                        name="myaccount-address" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="myaccount-adress">Phone</label>
+                                    <label for="myaccount-phone">Phone</label>
                                     <input type="text" class="form-control" id="myaccount-phone" placeholder="phone"
-                                        name="myaccount-phone">
+                                        name="myaccount-phone" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="myaccount-login">Login</label>
                                     <input type="text" class="form-control" id="myaccount-login" placeholder="login"
-                                        name="myaccount-login">
+                                        name="myaccount-login" disabled>
                                 </div>
                                 <div class="form-group">
                                     <label for="myaccount-password">Password</label>
                                     <input type="password" class="form-control" id="myaccount-password"
-                                        placeholder="Password" name="myaccount-password">
+                                        placeholder="Password" name="myaccount-password" required>
                                 </div>
                                 <div class="error">Wrong login or password</div>
                                 <button type="submit" class="button form-btn">Update</button>
@@ -212,7 +212,7 @@
     <header class="header">
         <div class="container">
             <div class="navbar navbar-expand-lg">
-                <div class="header__container">
+                <div class="pb-sm-4 header__container">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -232,7 +232,7 @@
                     </form>
                 </div>
 
-                <div class="header__container">
+                <div class="ml-lg-auto header__container">
                     <div class="backet">
                         <div class="backet__container">
                             <i class="fa fa-shopping-cart backet__icon" aria-hidden="true"></i>

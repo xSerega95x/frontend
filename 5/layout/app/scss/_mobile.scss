@@ -25,13 +25,6 @@
 }
 
 @media (max-width: 992px){
-    .header{
-        .form{
-            &__input{
-                width: 20rem;
-            }
-        }
-    }
     .section-slider{
         .deal{
             display: none;
@@ -42,6 +35,16 @@
             padding: 0 .2rem;
             &__header{
                 font-size: 2.1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 770px){
+    .header{
+        .form{
+            &__input{
+                width: 100%;
             }
         }
     }

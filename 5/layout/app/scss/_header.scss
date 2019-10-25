@@ -1,5 +1,6 @@
 .header {
   background: $c-header-bg;
+  padding: 2rem 0;
   .navbar {
     flex-wrap: wrap;
   }
@@ -10,11 +11,11 @@
   .form {
     padding: 4px;
     background-color: $c-search-bg;
-    margin: 4rem;
+    margin: 0 4rem;
     &__input {
       @include font($color03, normal, 2.3rem, $font-main);
       border: 0;
-      width: 32.8rem;
+      width: 62.4%;
     }
     &__button {
       @include font($color01, normal, 2.3rem, $font-main);

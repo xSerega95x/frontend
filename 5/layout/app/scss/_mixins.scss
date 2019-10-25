@@ -7,6 +7,7 @@
     background: $bg-color;
     border-radius: $br;
     padding: $padding;
+    display: inline-block;
 
     @if $border == true {
         border: 0.1rem solid rgba(0, 0, 0, 0.1);

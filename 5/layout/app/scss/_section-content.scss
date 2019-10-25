@@ -51,18 +51,21 @@
             height: 100%;
             &-discount{
                 background-color: $color06;
-                padding: 0.8rem 0.5rem 0.5rem 0.9rem;
+                padding: 10px 2px 9px 5px;
+                height: 50px;
+                width: 50px;
                 border-radius: 50%;
                 position: absolute;
                 top: -20px;
                 right: -20px;
                 text-align: center;
                 p{
-                    @include font($color01, bold, 1.9rem, $font-main);
+                    @include font($color01, bold, 19px, $font-main);
                     margin-bottom: 0;
+                    line-height: 19px;
                 }
                 span{
-                    @include font($color01, normal, 1.3rem, $font-main);
+                    @include font($color01, normal, 13px, $font-main);
                     line-height: 0;
                 }
             }
@@ -103,6 +106,151 @@
                 @include font($color18, normal, 1.5rem, $font-HLT);
                 border: 0;
                 background: none;
+            }
+        }
+    }
+}
+
+// page detail.html
+.section-content{
+    .border-main{
+        border: .1rem solid $color10;
+        border-radius: .7rem;
+        padding: 2.2rem;
+        margin-bottom: 1.8rem;
+    }
+    .product{
+        &__header{
+            @include font($color05, lighter, 4.1rem, $font-main);
+            padding-bottom: 2rem;
+        }
+        &__text{
+            @include font($color19, normal, 1.6rem, $font-SUI);
+        }
+        &__price{
+            .price{
+                border-radius: 0;
+                
+                &__header{
+                    @include font($color20, bold, 3.6rem, $font-main);
+                    span{
+                        color: $color21;
+                    }
+                }
+                &__description{
+                    @include font($color19, normal, 1.7rem, $font-SUI);
+                }
+                &__button{
+                    margin-left: 3rem;
+                }
+                &__cards{
+                    border-top: 1px solid $color10;
+                    padding-top: .8rem;
+                    .cards{
+                        
+                    }
+                }
+                &__text{
+                    @include font($color19, normal, 1.3rem, $font-HLT);
+                }
+            }
+        }
+    }
+    .product-details{
+        .nav{
+            &-tabs, &-item, &-link{
+                border-top-left-radius: .7rem;
+                border-top-right-radius: .7rem;
+                border-bottom: 0;
+            }
+            &-item{
+                background-color: $color22;
+                margin-right: 1.1rem;
+            }
+            &-link{
+                @include font($color01, normal, 1.6rem, $font-SUI);
+                &.active{
+                    @include font($color19, normal, 1.8rem, $font-SUI);
+                }
+            }
+        }
+        .tab-content{
+            @include font($color19, normal, 1.4rem, $font-SUI);
+            padding-top: 2rem;
+            border-top-left-radius: 0;
+        }
+    }
+    .comments{
+        &__container{
+            .comment:last-child{
+                border-bottom: 0;
+            }
+        }
+        .comment{
+            padding-bottom: 1rem;
+            border-bottom: 1px solid $color15;
+            &__header{
+                @include font($color19, normal, 2rem, $font-SUI);
+                padding: 1.5rem 0;
+            }
+            &__name{
+                @include font($color23, normal, 1.4rem, $font-SUI);
+            }
+            &__text{
+                @include font($color19, normal, 1.3rem, $font-SUI);
+                margin-left: -15px; // bootstrap
+            }
+        }
+        .comments__message{
+            .comments__header{
+                @include font($color19, normal, 2rem, $font-SUI);
+                padding: 1.5rem 0;
+            }
+            .form-comments{
+                label{
+                    @include font($color23, normal, 1.6rem, $font-SUI);
+                }
+                input, textarea{
+                    @include font($color19, normal, 1.6rem, $font-SUI);
+                    border-radius: .6rem;
+                }
+                .form-button{
+                    @include button($color12, .3rem, 1rem 1.9rem , false, false);
+                    @include font($color01, bold, 1.8rem, $font-HLT);
+                }
+            }
+        }
+    }
+    .rsidebar{
+        $content-paddings-x: 2.2rem;
+        padding: $content-paddings-x 0;
+        margin-left: -15px; //bootstrap
+        .book:last-child{
+            border-bottom: 0;
+        }
+        &__header{
+            @include font($color19, normal, 1.8rem, $font-SUI);
+            margin-bottom: 1.4rem;
+            padding: 0 $content-paddings-x;
+        }
+        .book{
+            border-bottom: 1px solid $color15;
+            padding: 1rem $content-paddings-x 1rem $content-paddings-x;
+            &__image{
+                padding: 0.5rem;
+                border-radius: 4px;
+                box-shadow: 0 0 5px $color02;
+            }
+            &__header{
+                @include font($color05, lighter, 1.5rem, $font-main);
+            }
+            &__price{
+                @include font($color06, bold, 2.1rem, $font-HLT);
+            }
+            button{
+                @include button($color05, .6rem, .4rem .6rem , false, false);
+                @include font($color01, normal, 1.5rem, $font-SUI);
+                margin-top: 1rem;
             }
         }
     }
