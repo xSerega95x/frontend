@@ -1,0 +1,43 @@
+.header{
+    &__search{
+        .form{
+            &__input{
+                @include font($color01, 1.4rem, normal, $font01);
+                padding: 2.7rem;
+            }
+            &__button{
+                @include font($color02, 1.4rem, normal, $font01);
+                margin-left: -2rem;
+            }
+        }
+        .list{
+            margin-top: 3.5rem;
+            &__item{
+                @include font($color01, 1.4rem, bold, $font01);
+                display: inline;
+                text-transform: uppercase;
+                i{
+                    color: $color02;
+                }
+            }
+        }
+    }
+    &__backet{
+        .backet{
+            position: relative;
+            &__icon{
+                @include special-font($color03, 5rem, $color02);
+                padding: 2.8rem;
+            }
+            &__count{
+                @include font($color03, 1rem, bold, $font01);
+                position: absolute;
+                top: 25%;
+                right: 10%;
+            }
+            i:hover{
+                background-color: $color10;
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+.footer{
+    background-color: $color01;
+    margin-top: 9rem;
+    padding-top: 6.4rem;
+    &__header{
+        @include font($color04, 1.8rem, bold, $font01);
+        text-transform: uppercase;
+        padding-bottom: 3.2rem;
+        letter-spacing: 0.2rem;
+    }
+    .list{
+        &__item{
+            @include font($color06, 1.4rem, normal, $font01);
+        }
+        &__link{
+            @include font($color06, 1.4rem, normal, $font01);
+            &:hover{
+                color: $color02;
+            }
+            &_header{
+                @include font($color04, 1.4rem, bold, $font01);
+                text-transform: uppercase;
+                letter-spacing: 0.1rem;
+            }
+        }
+    }
+    /* icons */
+    .fa-whatsapp{
+        @include special-font($color07, 2.4rem);
+        margin-left: 2rem;
+    }
+    .fa-phone-volume{
+        @include special-font($color08, 2.4rem);
+        margin-left: 1.3rem;
+    }
+    .fa-phone-alt, .fa-envelope, .fa-skype, .fa-lightbulb{
+        @include special-font($color02, 1.4rem);
+        margin-right: 1.4rem;
+    }
+    /* form */
+    .form{
+        &__input{
+            @include font($color04, 1.4rem, normal, $font01);
+            padding: 2.1rem 0;
+            background-color: transparent;
+            &::-moz-placeholder { color: $color04; }
+            &::-webkit-input-placeholder { color: $color04; }
+        }
+        &__button{
+            display: block;
+            margin: 2.2rem 0 0 auto;
+        }
+    }
+    .social{
+        display: flex;
+        align-items: center;
+        margin-top: 5rem;
+        &__image{
+            background-color: $color04;
+            padding: 1rem;
+            border-radius: 50%;
+        }
+        &__button{
+            margin-left: 1.5rem;
+            color: $color04;
+            letter-spacing: 0.2rem;
+        }
+    }
+    /* bottom footer*/
+    &__line{
+        width: 100%;
+        height: 0.2rem;
+        background-color: $color09;
+        margin: 3rem 0;
+    }
+    &__copyright{
+        @include font($color06, 1.4rem, normal, $font01);
+        display: flex;
+        padding-bottom: 5.8rem;
+    }
+}

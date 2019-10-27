@@ -1,0 +1,50 @@
+.menu{
+    background-color: $color01;
+    .navbar{
+        padding: 0 1rem;
+        &-toggler{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        &-nav{
+            display: flex;
+            flex-wrap: wrap;
+            .nav-item{
+                display: flex;
+                align-items: stretch;
+                padding: 1.1rem 0.94%;
+
+                &:last-child{
+                    background-color: $color05;
+                }
+                &:first-child{
+                    padding-left: 0;
+                }
+                .dropdown{
+                    &-menu{
+                        border-top: 2px solid $color02;
+                        padding: 2rem 1rem;
+                    }
+                    &-item{
+                        @include font($color01, 1.6rem, normal, $font01);
+                        margin-bottom: 0.5rem;
+                        &:hover{
+                            color: $color05;
+                        }
+                        &:active{
+                            background-color: $color06;
+                        }
+                    }
+                }
+            }
+            .nav-link{
+                @include font($color04, 1.6rem, normal, $font01);
+                display: inline-block;
+                &:hover{
+                    color: $color02;
+                }
+            }
+        }
+    }
+}

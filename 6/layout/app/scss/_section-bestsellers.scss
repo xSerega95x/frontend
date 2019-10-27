@@ -1,0 +1,12 @@
+.bestsellers{
+    margin-top: 6.4rem;
+    .card-sale{
+        @include font($color04, 1.4rem, normal, $font01);
+        position: absolute;
+        left: -1rem;
+        top: 0;
+        background-color: $color05;
+        padding: 1rem;
+        text-transform: uppercase;
+    }
+}

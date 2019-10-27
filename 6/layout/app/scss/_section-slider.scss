@@ -1,0 +1,76 @@
+.slider{
+    margin-top: 6rem;
+    &__container{
+        position: relative;
+    }
+    &__header{
+        @include font($color01, 4.6rem, bold, $font01);
+        position: absolute;
+        top: 25%;
+        left: 0;
+        z-index: 9999;
+        text-transform: uppercase;
+    }
+    &__button{
+        position: absolute;
+        top: 75%;
+        left: 0;
+        width: 100%;
+        padding: 1.8rem 0;
+        border-bottom: 3px solid $color02;
+        &:hover{
+            color: $color10;
+            border-color: $color10;
+        }
+    }
+
+    &__subimage{
+        position: absolute;
+        right: 45%;
+        top: 20%;
+        height: 75%;
+    }
+    &__price{
+        @include font($color01, 1.3rem, normal, $font01);
+        position: absolute;
+        top: 80%;
+        left: 60%;
+    }
+    &__recomendations{
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0 0 1rem 4.4rem;
+        background-color: $color11;
+        width: 35%;
+        .main-header_slider{
+            @include font($color01, 2rem, bold, $font01);
+            margin: 2.2rem auto;
+            width: 100%;
+        }
+        .list{
+            display: block; 
+            &__link{
+                @include font($color01, 1.6rem, normal, $font01);
+                &:hover{
+                    color: $color05;
+                }
+            }
+        }
+        
+    }
+    .carousel-indicators{
+        right: auto;
+        margin-left: 5%;
+        li{
+            width: 1rem;
+            height: 1rem;
+            margin-right: 3rem;
+            border: 2px solid $color02;
+            opacity: 1;
+        }
+        .active{
+            background-color: $color02;
+        }
+    }
+}

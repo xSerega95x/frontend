@@ -1,0 +1,16 @@
+.brands{
+    .main-header_brands{
+        margin-bottom: 2.4rem;
+    }
+    &__button{
+        display: block;
+        text-align: center;
+        margin-bottom: 4.4rem;
+        &:hover{
+            color: $color10;
+        }
+    }
+    .container{
+        margin-bottom: 5.6rem;
+    }
+}

@@ -1,0 +1,36 @@
+.panel{
+    border-bottom: 2px solid $color03;
+    .navbar{
+        padding: 0 1rem;
+    }
+    .nav-item{
+        padding: 0 3.3%;
+        &:first-child{
+            padding: 0;
+        }
+        &-bordered{
+            border-left: 2px solid $color03;
+            border-right: 2px solid $color03;
+        }
+    }
+    .nav-link{
+        @include font($color01, 1.3rem, normal, $font01);
+        
+        &:hover{
+            color: $color02;
+            cursor: pointer;
+        }
+        .special{
+            position: relative;
+            &__count{
+                @include font($color04, 1rem, normal, $font01);
+                position: absolute;
+                right: -2.2rem;
+                bottom: 0.5rem;
+                background-color: $color02;
+                padding: 0 0.2rem;
+                border-radius: 5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+html{ font-size: calc(10rem/16); }
+
+.form{
+    &__input{
+        border-radius: 0;
+        border: 0;
+        text-transform: uppercase;
+        border-bottom: 2px solid $color02;
+        width: 100%;
+    }
+    &__button{
+        border: 0;
+        padding-bottom: 2px;
+        background: none;
+    }
+}
+
+.list{
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item{
+        @include font($color01, 1.6rem, normal, $font01);
+        list-style-type: none;
+        padding: 0 1rem 2.2rem 0;
+        i{
+            padding-right: 0.5rem;
+        }
+    }
+    &__link, &__link:hover{
+        @include font($color01, 1.6rem, normal, $font01);
+        text-decoration: none;
+    }
+}
+
+.button, .button:hover{
+    @include font($color02, 1.4rem, bold, $font01);
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.main-header{
+    @include font($color01, 3.6rem, bold, $font01);
+    text-transform: uppercase;
+    padding: 2.4rem;
+    width: 50%;
+    text-align: center;
+    margin: 6.3rem auto;
+    border-bottom: 0.2rem solid $color02;
+}
+
+.goods{
+    &__content{
+        & > div{
+            border-right: 1px solid $color03;
+            &:last-child{
+                border-right: 0;
+            }
+        }
+        .card{
+            border: 0;
+            border-radius: 0;
+            &:hover .card-title{
+                color: $color02;
+            }
+            &-body{
+                text-align: center;
+            }
+            &-title{
+                @include font($color01, 1.6rem, bold, $font01);
+                text-transform: uppercase;
+                padding: 2.1rem 0;
+            }
+            &-text{
+                @include font($color01, 1.3rem, normal, $font01);
+                line-height: 1.7rem;
+            }
+            &-price{
+                @include font($color01, 1.3rem, normal, $font01);
+                s{
+                    @include font($color05, 1.3rem, normal, $font01);
+                    padding-right: 1rem;
+                }
+            }
+        }
+    }
+}
+
+/* slider */
+.carousel{
+    .carousel-control-prev-icon{
+        background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23c1a067' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+    }
+    .carousel-control-next-icon{
+        background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23c1a067' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+    }
+    .carousel-control-prev{ left: -5%; }
+    .carousel-control-next{ right: -5%; }
+    .carousel-control-prev-icon, .carousel-control-next-icon{ height: 4rem; }
+}

@@ -1,0 +1,49 @@
+.articles{
+    &__header{
+        @include font($color01, 3.6rem, bold, $font01);
+        text-transform: uppercase;
+        padding: 2.4rem 0 2.4rem 4.8rem;
+        width: 25%;
+        text-align: right;
+        margin: 3.6rem 25%;
+        border-bottom: 0.2rem solid $color02;
+    }
+    &__container{
+        align-items: flex-start;
+        .article{
+            border: 0;
+            &:nth-child(2n){
+                margin-left: -10%;
+            }
+        }
+        .article, img{
+            padding: 1.5rem 0;
+        }
+    }
+    &__button{
+        display: block;
+        text-align: center;
+        margin: 2.6rem 0;
+    }
+}
+
+.article{
+    padding: 3rem 0;
+    border-bottom: 1px solid $color03;
+    &__date{
+        @include font($color02, 1.3rem, normal, $font01);
+        padding-bottom: 1.2rem;
+    }
+    &__header{
+        @include font($color01, 1.6rem, normal, $font01);
+        padding-bottom: 1.8rem;
+        text-transform: uppercase;
+    }
+    &__link, &__link:hover{
+        @include font($color01, 1.6rem, normal, $font01);
+        text-decoration: none;
+    }
+    &__content{
+        @include font($color01, 1.4rem, normal, $font01);
+    }
+}

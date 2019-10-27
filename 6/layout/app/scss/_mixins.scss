@@ -1,0 +1,10 @@
+@mixin font($color: $color01, $fsize: 1rem, $fweight: normal, $ff: $font01){
+    font: $fweight $fsize $ff;
+    color: $color;
+}
+
+@mixin special-font($color: $color01, $fsize: 1rem, $bg-color: transparent){
+    color: $color;
+    font-size: $fsize;
+    background-color: $bg-color;
+}

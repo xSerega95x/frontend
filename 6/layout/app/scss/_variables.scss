@@ -1,0 +1,25 @@
+/*  COLORS  COLORS  COLORS  COLORS  COLORS  COLORS  COLORS  COLORS  COLORS  COLORS  COLORS  COLORS  */
+$color01: #302a31;
+$color02: #c1a067;
+$color03: #eceaed;
+$color04: #ffffff;
+$color05: #c16774;
+$color06: #cbcacb;
+$color07: #65bc54;
+$color08: #8456a5;
+$color09: #3f3a41;
+$color10: #cfad73;
+$color11: #f9f9f9;
+
+/*  FONTS   FONTS   FONTS   FONTS   FONTS   FONTS   FONTS   FONTS   FONTS   FONTS   FONTS   FONTS   */
+$font01: 'Rubik', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap');
+@font-face {
+    font-family: 'Rubik'; src: url('../fonts/Rubik-Regular.ttf');
+    font-style: normal; font-weight: normal;
+}
+@font-face {
+    font-family: 'Rubik'; src: url('../fonts/Rubik-Bold.ttf');
+    font-style: normal; font-weight: bold;
+}
