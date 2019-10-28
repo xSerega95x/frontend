@@ -1,0 +1,15 @@
+.section-content{
+    .content{
+        .content__backet{
+            .table{
+                th{ @include font($color08, bold, 1.8rem, $font-SUI); }
+                td{ @include font($color19, normal, 1.6rem, $font-SUI); }
+                th, td{ border: 0; }
+            }
+            .button{
+                @include button($color05, .6rem, .4rem .6rem, false, false);
+                @include font($color01, normal, 1.5rem, $font-SUI);
+            }
+        }
+    }
+}

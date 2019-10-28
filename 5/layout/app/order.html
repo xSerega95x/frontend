@@ -295,284 +295,134 @@
 
     <section class="section-content">
         <div class="container">
-            <section class="border-main product">
-                <div class="row">
-                    <div class="col-4">
-                        <img src="img/content/full/star-wars.jpg" alt="star-wars" class="img-fluid">
-                    </div>
-                    <div class="col-8">
-                        <header class="product__header">Star Wars Episode I</header>
-                        <p class="product__text">
-                            The Star Wars Episode I: The Phantom Menace
-                            novelization was written by Terry Brooks and published on
-                            April 21, 1999 by Del Rey. It is based on the script of the
-                            movie of the same name. Narration for the abridged audio version
-                            was performed by Michael Cumpsty. The unabridged version was
-                            performed by Alexander Adams. On January 31, 2012, a new paperback edition
-                            was released with a new short story, End Game, by James Luceno
-                            featured inside.
-                        </p>
-                        <div class="product__price">
-                            <div class="border-main price">
-                                <table>
+            <section class="content">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="backet-tab" data-toggle="tab" href="#backet" role="tab"
+                            aria-controls="backet" aria-selected="false">Backet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="wishlist-tab" data-toggle="tab" href="#wishlist" role="tab"
+                            aria-controls="wishlist" aria-selected="false">Wishlist</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="backet" role="tabpanel" aria-labelledby="backet-tab">
+                        <div class="content__backet">
+                            <table class="table table-striped">
+                                <thead>
                                     <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Author</th>
+                                        <th scope="col">Book</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Address</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Edmund De Waae</td>
+                                        <td>The Hare With Amber Eyes</td>
+                                        <td>$50</td>
+                                        <td>School street, 72</td>
+                                        <td>Ordered</td>
+                                        <td><a href="#" class="button">Remove</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Ravinder Singh</td>
+                                        <td>Can love happen twice?</td>
+                                        <td>$25</td>
+                                        <td>University avenue, 3</td>
+                                        <td>Ordered</td>
+                                        <td><a href="#" class="button">Remove</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Edmund De Waae</td>
+                                        <td>The Hare With Amber Eyes</td>
+                                        <td>$50</td>
+                                        <td>School street, 72</td>
+                                        <td>Ordered</td>
+                                        <td><a href="#" class="button">Remove</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="wishlist" role="tabpanel" aria-labelledby="wishlist-tab">
+                        <div class="content__backet">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Author</th>
+                                        <th scope="col">Book</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Address</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Edmund De Waae</td>
+                                        <td>The Hare With Amber Eyes</td>
+                                        <td>$50</td>
+                                        <td>School street, 72</td>
+                                        <td>Ordered</td>
                                         <td>
-                                            <p class="price__header">Our price: <span>$150</span></p>
-                                            <p class="price__description">Was $ 200 Save 20%</p>
-                                        </td>
-                                        <td>
-                                            <a href="#" class="button price__button">Add to card</a>
+                                            <a href="#" class="button">Remove</a>
+                                            <a href="#" class="button">Order</a>
                                         </td>
                                     </tr>
-                                </table>
-                                <div class="price__cards">
-                                    <p class="product__text price__text">
-                                        <i class="fas fa-lock"></i> Safe, Secure Shopping</p>
-                                    <div class="cards">
-                                        <img src="img/ui/detail/paypal.jpg" alt="paypal">
-                                        <img src="img/ui/detail/mastercard.jpg" alt="mastercard">
-                                        <img src="img/ui/detail/visa.jpg" alt="visa">
-                                        <img src="img/ui/detail/americanexpress.jpg" alt="americanexpress">
-                                    </div>
-                                </div>
-                            </div>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Ravinder Singh</td>
+                                        <td>Can love happen twice?</td>
+                                        <td>$25</td>
+                                        <td>University avenue, 3</td>
+                                        <td>Ordered</td>
+                                        <td>
+                                            <a href="#" class="button">Remove</a>
+                                            <a href="#" class="button">Order</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Edmund De Waae</td>
+                                        <td>The Hare With Amber Eyes</td>
+                                        <td>$50</td>
+                                        <td>School street, 72</td>
+                                        <td>Ordered</td>
+                                        <td>
+                                            <a href="#" class="button">Remove</a>
+                                            <a href="#" class="button">Order</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Ravinder Singh</td>
+                                        <td>Can love happen twice?</td>
+                                        <td>$25</td>
+                                        <td>University avenue, 3</td>
+                                        <td>Ordered</td>
+                                        <td>
+                                            <a href="#" class="button">Remove</a>
+                                            <a href="#" class="button">Order</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
-            </section>
-            <div class="row">
-                <div class="col-8">
-                    <section class="product-details">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="info-tab" data-toggle="tab" href="#info" role="tab"
-                                    aria-controls="info" aria-selected="true">Product information</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="details-tab" data-toggle="tab" href="#details" role="tab"
-                                    aria-controls="details" aria-selected="false">Other details</a>
-                            </li>
-                        </ul>
-                        <div class="border-main tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
-                                The Star Wars Episode I: The Phantom Menace novelization was written by Terry Brooks and
-                                published on April 21, 1999 by Del Rey. It is based on the script of the movie of the
-                                same name. Narration for the abridged audio version was performed by Michael Cumpsty.
-                                The unabridged version was performed by Alexander Adams. On January 31, 2012, a new
-                                paperback edition was released with a new short story, End Game, by James Luceno
-                                featured
-                                inside. The Star Wars Episode I: The Phantom Menace novelization was written by Terry
-                                Brooks and published on April 21, 1999 by Del Rey. It is based on the script of the
-                                movie
-                                of the same name. Narration for the abridged audio version was performed by Michael
-                                Cumpsty.
-                                The unabridged version was performed by Alexander Adams. On January 31, 2012, a new
-                                paperback
-                                edition was released with a new short story, End Game, by James Luceno featured inside.
-                                The Star Wars Episode I: The Phantom Menace novelization was written by Terry Brooks and
-                                published on April 21, 1999 by Del Rey. It is based on the script of
-                                the movie of the same name. Narration for the abridged audio version was performed by
-                                Michael Cumpsty. The unabridged version was performed by Alexander Adams. On January 31,
-                                2012, a new paperback edition was released with a new short story, End Game, by James
-                                Luceno featured inside. The Star Wars Episode I: The Phantom Menace novelization was
-                                written by Terry Brooks and published on April 21, 1999 by Del Rey. It is based on the
-                                script of the movie of the same name. Narration for the abridged audio version was
-                                performed by Michael Cumpsty. The unabridged version was performed by Alexander Adams.
-                                On January 31, 2012, a new paperback edition was released with a new short story, End
-                                Game, by James Luceno featured inside.
-                            </div>
-                            <div class="tab-pane fade" id="details" role="tabpanel" aria-labelledby="details-tab">Other
-                                details</div>
-                        </div>
-                    </section>
-                    <section class="border-main comments">
-                        <div class="comments__container">
-                            <div class="comment">
-                                <header class="comment__header">Product review</header>
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img src="img/users/no-avatar.jpg" alt="avatar"
-                                            class="img-fluid comment__avatar">
-                                        <span class="comment__name">Name 1</span>
-                                    </div>
-                                    <div class="col-10">
-                                        <p class="comment__text">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem
-                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
-                                            an
-                                            unknown printer took a galley of type and scrambled it to make a type
-                                            specimen
-                                            book. It has survived not only five centuries, but also the leap into
-                                            electronic
-                                            typesetting, remaining essentially unchanged. It was popularised in the
-                                            1960s
-                                            with the release of Letraset sheetscontaining Lorem Ipsum passages, and more
-                                            recently with desktop publishing software like Aldus PageMaker including
-                                            versions of Lorem Ipsum.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="comment">
-                                <header class="comment__header">Product review</header>
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img src="img/users/no-avatar.jpg" alt="avatar"
-                                            class="img-fluid comment__avatar">
-                                        <span class="comment__name">Name 2</span>
-                                    </div>
-                                    <div class="col-10">
-                                        <p class="comment__text">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem
-                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
-                                            an
-                                            unknown printer took a galley of type and scrambled it to make a type
-                                            specimen
-                                            book. It has survived not only five centuries, but also the leap into
-                                            electronic
-                                            typesetting, remaining essentially unchanged. It was popularised in the
-                                            1960s
-                                            with the release of Letraset sheetscontaining Lorem Ipsum passages, and more
-                                            recently with desktop publishing software like Aldus PageMaker including
-                                            versions of Lorem Ipsum.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comments__message">
-                            <header class="comments__header">Write a comment</header>
-                            <form class="form-comments">
-                                <div class="form-group row">
-                                    <label for="username" class="col-sm-3 col-form-label">Your name</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="username" name="username" required>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="useremail" class="col-sm-3 col-form-label">email</label>
-                                    <div class="col-sm-9">
-                                        <input type="email" class="form-control" id="useremail" name="usermail" required>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="usermessage" class="col-sm-3 col-form-label">Message</label>
-                                    <div class="col-sm-9">
-                                        <textarea class="form-control" id="usermessage" rows="3" name="usermessage" required></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-sm-9">
-                                        <form action="" method="post">
-                                            <input type="hidden" name="" value="">
-                                            <button type="submit" class="pull-right form-button">Submit</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
 
-                    </section>
-                </div>
-                <div class="col-4">
-                    <aside class="border-main rsidebar">
-                        <header class="rsidebar__header">You may also like</header>
-                        <div class="book">
-                            <div class="row">
-                                <div class="col-12 col-lg-4">
-                                    <img src="img/content/preview/the-hare-with-amber-eyes.jpg"
-                                        alt="the-hare-with-amber-eyes" class="img-fluid book__image">
-                                </div>
-                                <div class="col-12 col-lg-8">
-                                    <header class="book__header">The Hare With Amber</header>
-                                    <div class="book__price">$50</div>
-                                    <button>Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="book">
-                            <div class="row">
-                                <div class="col-12 col-lg-4">
-                                    <img src="img/content/preview/the-hare-with-amber-eyes.jpg"
-                                        alt="the-hare-with-amber-eyes" class="img-fluid book__image">
-                                </div>
-                                <div class="col-12 col-lg-8">
-                                    <header class="book__header">The Hare With Amber</header>
-                                    <div class="book__price">$50</div>
-                                    <button>Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="book">
-                            <div class="row">
-                                <div class="col-12 col-lg-4">
-                                    <img src="img/content/preview/the-hare-with-amber-eyes.jpg"
-                                        alt="the-hare-with-amber-eyes" class="img-fluid book__image">
-                                </div>
-                                <div class="col-12 col-lg-8">
-                                    <header class="book__header">The Hare With Amber</header>
-                                    <div class="book__price">$50</div>
-                                    <button>Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="book">
-                            <div class="row">
-                                <div class="col-12 col-lg-4">
-                                    <img src="img/content/preview/the-hare-with-amber-eyes.jpg"
-                                        alt="the-hare-with-amber-eyes" class="img-fluid book__image">
-                                </div>
-                                <div class="col-12 col-lg-8">
-                                    <header class="book__header">The Hare With Amber</header>
-                                    <div class="book__price">$50</div>
-                                    <button>Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="book">
-                            <div class="row">
-                                <div class="col-12 col-lg-4">
-                                    <img src="img/content/preview/the-hare-with-amber-eyes.jpg"
-                                        alt="the-hare-with-amber-eyes" class="img-fluid book__image">
-                                </div>
-                                <div class="col-12 col-lg-8">
-                                    <header class="book__header">The Hare With Amber</header>
-                                    <div class="book__price">$50</div>
-                                    <button>Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="book">
-                            <div class="row">
-                                <div class="col-12 col-lg-4">
-                                    <img src="img/content/preview/the-hare-with-amber-eyes.jpg"
-                                        alt="the-hare-with-amber-eyes" class="img-fluid book__image">
-                                </div>
-                                <div class="col-12 col-lg-8">
-                                    <header class="book__header">The Hare With Amber</header>
-                                    <div class="book__price">$50</div>
-                                    <button>Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="book">
-                            <div class="row">
-                                <div class="col-12 col-lg-4">
-                                    <img src="img/content/preview/the-hare-with-amber-eyes.jpg"
-                                        alt="the-hare-with-amber-eyes" class="img-fluid book__image">
-                                </div>
-                                <div class="col-12 col-lg-8">
-                                    <header class="book__header">The Hare With Amber</header>
-                                    <div class="book__price">$50</div>
-                                    <button>Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </aside>
-                </div>
-            </div>
+            </section>
         </div>
     </section>
 
